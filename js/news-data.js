@@ -246,4 +246,19 @@ const NEWS_ITEMS = [
 <p>The research uses data collected from user studies in VR2Gather, CWI's social VR platform, and contributes to a growing body of work on how social norms and spatial behaviour transfer — or adapt — when people move from physical to virtual environments.</p>`,
     url: "https://www.cwi.nl/en/stories/how-do-we-use-space-in-vr/",
   },
+  {
+    isoDate: "2023-05-25",
+    id: "spring-school-2023",
+    category: "Service",
+    indexDate: "25 May 2023",
+    indexContent: `🎙️ <a href="https://www.dis.cwi.nl/news/2023-05-25-dis-organises-spring-school-on-social-xr/" target="_blank" rel="noopener"><strong>Silvia as Organises of the Spring School on Social XR</strong></a>`,
+    cardDate: "25 May 2023",
+    cardTitle: "Spring School on Social XR 2023",
+    cardText: "As part of the research semester program  of CWI, the Distributed and Interactive Systems group (DIS) organized the Spring School on Social XR.",
+    cardImg: "assets/img/news/2023-05-25-spring-school-on-social-xr.jpg",
+    banner: "assets/img/news/2023-05-25-spring-school-on-social-xr.jpg",
+    fullText: `<p>As part of the research semester program  of CWI, the Distributed and Interactive Systems group (DIS) organized the Spring School on Social XR. The event took place on March 13th – 17th 2023, and attracted 33 students from different disciplines (technology, social sciences and humanities). The program included 18 lectures, 4 of them open, by 20 instructors. The event was organized by Irene Viola, Silvia Rossi, and Pablo Cesar from CWI; and Omar Niamut from TNO. It was co-sponsored by ACM SIGMM , the ACM Special Interest Group on Multimedia, and The Netherlands Institute for Sound and Vision.</p>
+    <p>“The future of media communication is immersive, and will empower sectors such as cultural heritage, education, manufacturing, and provide a climate-neutral alternative to travelingin the European Green Deal”. With such a vision in mind, the organization committee created a holistic program around the research topic of Social XR. The program included keynotes and workshops, where prominent scientists in the field shared their knowledge with students and triggered meaningful conversations and exchanges.</p>`,
+    url: "https://www.dis.cwi.nl/news/2023-05-25-dis-organises-spring-school-on-social-xr/",
+  },
 ];
