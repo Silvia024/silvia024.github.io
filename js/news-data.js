@@ -207,8 +207,8 @@ const NEWS_ITEMS = [
     cardDate: "5 January 2024",
     cardTitle: "Understanding Users to Optimise 3D Experiences",
     cardText: "Interview on Academic Positions on Silvia's research into virtual reality, user behaviour, and optimising immersive media systems for real-world scale.",
-    cardImg: "https://static.wixstatic.com/media/6e11d6_3b314c703bdb41e891793faa49cc031e~mv2.jpg/v1/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/MK3_6824_JPG.jpg",
-    banner: "https://static.wixstatic.com/media/6e11d6_3b314c703bdb41e891793faa49cc031e~mv2.jpg/v1/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/MK3_6824_JPG.jpg",
+    cardImg: "assets/img/news/2024-01-05-interview-academic-positions.jpg",
+    banner: "assets/img/news/2024-01-05-interview-academic-positions.jpg",
     fullText: `<p>Academic Positions published an interview with Silvia Rossi on her research into virtual reality, user behaviour, and the challenge of optimising immersive media systems for real-world scale.</p>
 <p>In the interview, Silvia discusses how understanding the way individual users move, look, and interact in 3D virtual environments is key to designing efficient systems — from adaptive streaming pipelines that predict what content to pre-load, to social VR platforms that can support many simultaneous users without sacrificing quality of experience.</p>
 <p>She also reflects on the path from PhD research at University College London to her current role at CWI Amsterdam, and the importance of user studies as a foundation for systems research in immersive media.</p>`,
