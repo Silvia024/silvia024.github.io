@@ -248,17 +248,19 @@ const NEWS_ITEMS = [
   },
   {
     isoDate: "2023-10-17",
-    id: "spring-school-2023",
-    category: "Service",
+    id: "dutch-media-week-2023",
+    category: "Media",
     indexDate: "17 October 2023",
     indexContent: `🎙️ <a href="https://www.dis.cwi.nl/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week/" target="_blank" rel="noopener"><strong>Silvia Rossi Invited to the Dutch Media Week</strong></a>`,
     cardDate: "17 October 2023",
     cardTitle: "Silvia Rossi Invited to the Dutch Media Week",
-    cardText: "As part of the research semester program  of CWI, the Distributed and Interactive Systems group (DIS) organized the Spring School on Social XR.",
-    cardImg: "assets/img/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week.jpg",
+    cardText: "During the Dutch Media Week, postdoctoral researcher Silvia Rossi was one of the speakers at the program Cross Media Café on Spatial computing. She brought a scientific perspective talking about her work on understanding user behaviour in XR.",
+    cardImg: "assets/img/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week_cover.jpg",
     banner: "assets/img/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week.jpg",
-    fullText: `<p>As part of the research semester program  of CWI, the Distributed and Interactive Systems group (DIS) organized the Spring School on Social XR. The event took place on March 13th – 17th 2023, and attracted 33 students from different disciplines (technology, social sciences and humanities). The program included 18 lectures, 4 of them open, by 20 instructors. The event was organized by Irene Viola, Silvia Rossi, and Pablo Cesar from CWI; and Omar Niamut from TNO. It was co-sponsored by ACM SIGMM , the ACM Special Interest Group on Multimedia, and The Netherlands Institute for Sound and Vision.</p>
-    <p>“The future of media communication is immersive, and will empower sectors such as cultural heritage, education, manufacturing, and provide a climate-neutral alternative to travelingin the European Green Deal”. With such a vision in mind, the organization committee created a holistic program around the research topic of Social XR. The program included keynotes and workshops, where prominent scientists in the field shared their knowledge with students and triggered meaningful conversations and exchanges.</p>`,
+    fullText: `<p>CWI postdoctoral researcher Silvia Rossi was recently one of the invited speakers at the program Cross Media Cafè on October 3, 2023 during the Dutch Media week. The Cross Media Café is organised by Sound & Vision and Media Perspectives and aims at showcasing the latest developments in the field of media, technology and innovation for media professionals. She brought a scientific perspective talking about her work on understanding user behaviour in XR.</p>
+    <p>The focus of Cross Media Cafè was ‘spatial computing’, a new bridge between the physical and virtual world. By merging the digital and physical dimensions, spatial computing has opened the gate to a futuristic world of virtual interaction and immersive experiences. This topic was discussed by Monique van Dusseldorp together with 6 experts and pioneers in the field who shared their insights on the vast potential and transformative power of spatial computing. Among these invited speakers, there was Silvia Rossi, postdoctoral researcher in the Distributed and Interactive System (DIS) group. She took part in the first round of discussions together with Gabriele Romagnoli (Head of Business at ShapesXR) and Benjamin de Wit (founder VRDays Europe and organizer Immersive Tech Week).</p>
+
+</p>`,
     url: "https://www.dis.cwi.nl/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week/",
   },
   {
