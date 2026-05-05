@@ -231,6 +231,20 @@ const NEWS_ITEMS = [
     url: "https://www.ucl.ac.uk/electronic-electrical-engineering/news/2023/nov/ucl-alumni-receives-prestigious-sigmm-award",
   },
   {
+    isoDate: "2023-10-31",
+    id: "ACM-MM-2023",
+    category: "Media",
+    indexDate: "31 Oct 2023",
+    indexContent: `🎙️ <a href="https://www.cwi.nl/en/news/dis-group-at-acm-mm-conference-2023/" target="_blank" rel="noopener"><strong>DIS Group at ACM MM Conference 2023</strong></a>`,
+    cardDate: "19 October 2023",
+    cardTitle: "DIS Group at ACM MM Conference 2023",
+    cardText: "Research carried out by the Distributed and Interactive Systems (DIS) group from Centrum Wiskunde & Informatica (CWI) has resulted in contributions to this year's ACM Multimedia Conference.",
+    cardImg: "assets/img/news/2023-10-31-dis-group-at-acm-mm-conference-2023.jpg",
+    banner: "assets/img/news/2023-10-31-dis-group-at-acm-mm-conference-2023.jpg",
+    fullText: `<p>Research carried out by the Distributed and Interactive Systems (DIS) group from Centrum Wiskunde & Informatica (CWI) has resulted in contributions to this year's ACM Multimedia Conference (ACM MM 2023). Since its inception in 1993, ACM Multimedia is the worldwide premier conference and a key world event to display scientific achievements and innovative industrial products in the multimedia field. It is the flagship of the ACM Special Interest Group on Multimedia (ACM SIGMM) which provides a forum for researchers, engineers, and practitioners in all aspects of multimedia computing, communication, storage, and applications. We keep helping the SIGMM community, with Pablo Cesar in the executive committee and acting as Editor in Chief of the SIGMM Records, the SIGMM quarterly magazine. Silvia Rossi is also leading the SIGMM Records as Information Director.</p>`,
+    url: "https://www.cwi.nl/en/news/dis-group-at-acm-mm-conference-2023/",
+  },
+  {
     isoDate: "2023-10-19",
     id: "vr-space-2023",
     category: "Media",
@@ -242,8 +256,7 @@ const NEWS_ITEMS = [
     cardImg: "assets/img/news/2023-10-19-how-do-we-use-space-in-vr.jpg",
     banner: "assets/img/news/2023-10-19-how-do-we-use-space-in-vr.jpg",
     fullText: `<p>CWI Amsterdam published an interview with Silvia Rossi exploring how people use and perceive space in virtual reality environments — particularly in social VR settings where multiple users share the same virtual space.</p>
-<p>The interview discusses findings from Silvia's research on proxemics (personal space) and navigation behaviour in immersive multi-user environments. Key questions include: do people maintain the same social distances in VR as in physical spaces? How do users navigate around each other? And what does this mean for the design of social VR platforms?</p>
-<p>The research uses data collected from user studies in VR2Gather, CWI's social VR platform, and contributes to a growing body of work on how social norms and spatial behaviour transfer — or adapt — when people move from physical to virtual environments.</p>`,
+            <p>The interview discusses findings from Silvia's research on proxemics (personal space) and navigation behaviour in immersive multi-user environments. Key questions include: do people maintain the same social distances in VR as in physical spaces? How do users navigate around each other? And what does this mean for the design of social VR platforms?</p>`,
     url: "https://www.cwi.nl/en/stories/how-do-we-use-space-in-vr/",
   },
   {
@@ -254,10 +267,10 @@ const NEWS_ITEMS = [
     indexContent: `🎙️ <a href="https://www.dis.cwi.nl/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week/" target="_blank" rel="noopener"><strong>Silvia Rossi Invited to the Dutch Media Week</strong></a>`,
     cardDate: "17 October 2023",
     cardTitle: "Silvia Rossi Invited to the Dutch Media Week",
-    cardText: "During the Dutch Media Week, postdoctoral researcher Silvia Rossi was one of the speakers at the program Cross Media Café on Spatial computing. She brought a scientific perspective talking about her work on understanding user behaviour in XR.",
+    cardText: "During the Dutch Media Week, postdoctoral researcher Silvia Rossi was one of the speakers at the program Cross Media Café on Spatial computing. ",
     cardImg: "assets/img/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week_cover.jpg",
     banner: "assets/img/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week.jpg",
-    fullText: `<p>CWI postdoctoral researcher Silvia Rossi was recently one of the invited speakers at the program Cross Media Cafè on October 3, 2023 during the Dutch Media week. The Cross Media Café is organised by Sound & Vision and Media Perspectives and aims at showcasing the latest developments in the field of media, technology and innovation for media professionals. She brought a scientific perspective talking about her work on understanding user behaviour in XR.</p>
+    fullText: `<p>During the Dutch Media Week, postdoctoral researcher Silvia Rossi was recently one of the invited speakers at the program Cross Media Cafè on October 3, 2023 during the Dutch Media week. The Cross Media Café is organised by Sound & Vision and Media Perspectives and aims at showcasing the latest developments in the field of media, technology and innovation for media professionals. She brought a scientific perspective talking about her work on understanding user behaviour in XR.</p>
     <p>The focus of Cross Media Cafè was ‘spatial computing’, a new bridge between the physical and virtual world. By merging the digital and physical dimensions, spatial computing has opened the gate to a futuristic world of virtual interaction and immersive experiences. This topic was discussed by Monique van Dusseldorp together with 6 experts and pioneers in the field who shared their insights on the vast potential and transformative power of spatial computing. Among these invited speakers, there was Silvia Rossi, postdoctoral researcher in the Distributed and Interactive System (DIS) group. She took part in the first round of discussions together with Gabriele Romagnoli (Head of Business at ShapesXR) and Benjamin de Wit (founder VRDays Europe and organizer Immersive Tech Week).</p>`,
     url: "https://www.dis.cwi.nl/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week/",
   },
