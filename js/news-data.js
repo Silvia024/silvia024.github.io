@@ -239,19 +239,34 @@ const NEWS_ITEMS = [
     cardDate: "19 October 2023",
     cardTitle: "How do we use space in VR?",
     cardText: "CWI interview on personal space and navigation in social VR, discussing Silvia's findings on user behaviour in immersive multi-user environments.",
-    cardImg: "https://static.wixstatic.com/media/6e11d6_ae39228e10e441ee8523809471fb2c4c~mv2.jpg/v1/crop/x_0,y_66,w_400,h_399/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/_home_django_cwi_src_private_images_Silvia_Rossi_met_VR_bril_width-400.jpg",
-    banner: "https://static.wixstatic.com/media/6e11d6_ae39228e10e441ee8523809471fb2c4c~mv2.jpg/v1/crop/x_0,y_66,w_400,h_399/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/_home_django_cwi_src_private_images_Silvia_Rossi_met_VR_bril_width-400.jpg",
+    cardImg: "assets/img/news/2023-10-19-how-do-we-use-space-in-vr.jpg",
+    banner: "assets/img/news/2023-10-19-how-do-we-use-space-in-vr.jpg",
     fullText: `<p>CWI Amsterdam published an interview with Silvia Rossi exploring how people use and perceive space in virtual reality environments — particularly in social VR settings where multiple users share the same virtual space.</p>
 <p>The interview discusses findings from Silvia's research on proxemics (personal space) and navigation behaviour in immersive multi-user environments. Key questions include: do people maintain the same social distances in VR as in physical spaces? How do users navigate around each other? And what does this mean for the design of social VR platforms?</p>
 <p>The research uses data collected from user studies in VR2Gather, CWI's social VR platform, and contributes to a growing body of work on how social norms and spatial behaviour transfer — or adapt — when people move from physical to virtual environments.</p>`,
     url: "https://www.cwi.nl/en/stories/how-do-we-use-space-in-vr/",
   },
   {
+    isoDate: "2023-10-17",
+    id: "spring-school-2023",
+    category: "Service",
+    indexDate: "17 October 2023",
+    indexContent: `🎙️ <a href="https://www.dis.cwi.nl/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week/" target="_blank" rel="noopener"><strong>Silvia Rossi Invited to the Dutch Media Week</strong></a>`,
+    cardDate: "17 October 2023",
+    cardTitle: "Silvia Rossi Invited to the Dutch Media Week",
+    cardText: "As part of the research semester program  of CWI, the Distributed and Interactive Systems group (DIS) organized the Spring School on Social XR.",
+    cardImg: "assets/img/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week.jpg",
+    banner: "assets/img/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week.jpg",
+    fullText: `<p>As part of the research semester program  of CWI, the Distributed and Interactive Systems group (DIS) organized the Spring School on Social XR. The event took place on March 13th – 17th 2023, and attracted 33 students from different disciplines (technology, social sciences and humanities). The program included 18 lectures, 4 of them open, by 20 instructors. The event was organized by Irene Viola, Silvia Rossi, and Pablo Cesar from CWI; and Omar Niamut from TNO. It was co-sponsored by ACM SIGMM , the ACM Special Interest Group on Multimedia, and The Netherlands Institute for Sound and Vision.</p>
+    <p>“The future of media communication is immersive, and will empower sectors such as cultural heritage, education, manufacturing, and provide a climate-neutral alternative to travelingin the European Green Deal”. With such a vision in mind, the organization committee created a holistic program around the research topic of Social XR. The program included keynotes and workshops, where prominent scientists in the field shared their knowledge with students and triggered meaningful conversations and exchanges.</p>`,
+    url: "https://www.dis.cwi.nl/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week/",
+  },
+  {
     isoDate: "2023-05-25",
     id: "spring-school-2023",
     category: "Service",
     indexDate: "25 May 2023",
-    indexContent: `🎙️ <a href="https://www.dis.cwi.nl/news/2023-05-25-dis-organises-spring-school-on-social-xr/" target="_blank" rel="noopener"><strong>Silvia as Organises of the Spring School on Social XR</strong></a>`,
+    indexContent: `🎙️ <a href="https://www.dis.cwi.nl/news/2023-05-25-dis-organises-sping-school-on-social-xr/" target="_blank" rel="noopener"><strong>Silvia as Organises of the Spring School on Social XR</strong></a>`,
     cardDate: "25 May 2023",
     cardTitle: "Spring School on Social XR 2023",
     cardText: "As part of the research semester program  of CWI, the Distributed and Interactive Systems group (DIS) organized the Spring School on Social XR.",
@@ -259,6 +274,6 @@ const NEWS_ITEMS = [
     banner: "assets/img/news/2023-05-25-spring-school-on-social-xr.jpg",
     fullText: `<p>As part of the research semester program  of CWI, the Distributed and Interactive Systems group (DIS) organized the Spring School on Social XR. The event took place on March 13th – 17th 2023, and attracted 33 students from different disciplines (technology, social sciences and humanities). The program included 18 lectures, 4 of them open, by 20 instructors. The event was organized by Irene Viola, Silvia Rossi, and Pablo Cesar from CWI; and Omar Niamut from TNO. It was co-sponsored by ACM SIGMM , the ACM Special Interest Group on Multimedia, and The Netherlands Institute for Sound and Vision.</p>
     <p>“The future of media communication is immersive, and will empower sectors such as cultural heritage, education, manufacturing, and provide a climate-neutral alternative to travelingin the European Green Deal”. With such a vision in mind, the organization committee created a holistic program around the research topic of Social XR. The program included keynotes and workshops, where prominent scientists in the field shared their knowledge with students and triggered meaningful conversations and exchanges.</p>`,
-    url: "https://www.dis.cwi.nl/news/2023-05-25-dis-organises-spring-school-on-social-xr/",
+    url: "https://www.dis.cwi.nl/news/2023-05-25-dis-organises-sping-school-on-social-xr/",
   },
 ];
