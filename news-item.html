@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | Silvia Rossi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── BACK BUTTON ────────────────────────────────────────── */
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 22px;
+      background: #f5d87a;
+      border: 2px solid #c8a040;
+      border-radius: 50px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a2b3c;
+      margin-bottom: 28px;
+      transition: background 0.2s;
+    }
+    .btn-back:hover { background: #f0c040; text-decoration: none; }
+
+    /* ── BANNER ─────────────────────────────────────────────── */
+    .ni-banner {
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 32px;
+      border: 2px solid #e0c060;
+      box-shadow: 4px 4px 0 #c8a040;
+    }
+    .ni-banner img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* ── CONTENT CARD ───────────────────────────────────────── */
+    .ni-card {
+      background: #fff;
+      border: 2px solid #e0c060;
+      border-radius: 8px;
+      box-shadow: 4px 4px 0 #c8a040;
+      padding: 40px 48px 44px;
+    }
+
+    /* ── META ROW (category + date) ─────────────────────────── */
+    .ni-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .ni-category {
+      background: #f0a500;
+      color: #1a2b3c;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 50px;
+    }
+    .ni-date {
+      font-size: 13px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── TITLE ──────────────────────────────────────────────── */
+    .ni-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 30px;
+      font-weight: 800;
+      color: #1a2b3c;
+      line-height: 1.25;
+      margin-bottom: 28px;
+    }
+
+    /* ── DIVIDER ────────────────────────────────────────────── */
+    .ni-divider {
+      height: 2px;
+      background: #f0a500;
+      border: none;
+      margin-bottom: 28px;
+    }
+
+    /* ── BODY TEXT ──────────────────────────────────────────── */
+    .ni-body {
+      font-size: 16px;
+      color: #2c3e50;
+      line-height: 1.85;
+    }
+    .ni-body p { margin-bottom: 18px; }
+    .ni-body p:last-child { margin-bottom: 0; }
+    .ni-body a { color: #1a2b3c; text-decoration: underline; }
+    .ni-body a:hover { color: #c8a040; }
+    .ni-body strong { font-weight: 700; }
+    .ni-body em { font-style: italic; }
+
+    /* ── ACTIONS (external link) ────────────────────────────── */
+    .ni-actions {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid #e8e0cc;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-source {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 26px;
+      background: #1a2b3c;
+      border: 2px solid #1a2b3c;
+      border-radius: 50px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #f0a500;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-source:hover { background: #2c3e50; text-decoration: none; color: #f0a500; }
+
+    /* ── NOT FOUND ──────────────────────────────────────────── */
+    .ni-not-found {
+      text-align: center;
+      padding: 60px 20px;
+      color: #2c3e50;
+    }
+    .ni-not-found h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #1a2b3c;
+    }
+    .ni-not-found p { font-size: 15px; color: #555; }
+
+    /* ── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 700px) {
+      .ni-card { padding: 28px 20px 32px; }
+      .ni-title { font-size: 22px; }
+      .ni-banner img { height: 220px; }
+      .ni-body { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/icons/VR_pupina_website_yellow.png" alt="Silvia Rossi home" class="nav-logo">
+      <div>
+        <span class="nav-brand-name">Silvia Rossi</span>
+        <span class="nav-brand-degree"> PhD</span>
+      </div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="news.html" class="active">News</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="page-wrap" id="ni-content">
+
+      <!-- populated by JS below -->
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-col-dark">
+      <address>
+        Centrum Wiskunde &amp; Informatica<br>
+        Science Park 123, 1098XG<br>
+        Amsterdam, The Netherlands<br>
+        <a href="mailto:s.rossi@cwi.nl">s.rossi@cwi.nl</a>
+      </address>
+    </div>
+    <div class="footer-col-dark"></div>
+    <div class="footer-col-light"><p class="footer-copy">© 2025 Silvia Rossi</p></div>
+  </footer>
+
+  <!-- NAV TOGGLE -->
+  <script>
+    var _toggle = document.getElementById('navToggle');
+    var _links  = document.getElementById('navLinks');
+    _toggle.addEventListener('click', function () {
+      var open = _links.classList.toggle('open');
+      _toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && _links.classList.contains('open')) {
+        _links.classList.remove('open');
+        _toggle.setAttribute('aria-expanded', 'false');
+        _toggle.focus();
+      }
+    });
+  </script>
+
+  <!-- NEWS DETAIL: load data and render the item matching ?id= -->
+  <script src="js/news-data.js"></script>
+  <script>
+    (function () {
+      var container = document.getElementById('ni-content');
+
+      /* ── helper: show a friendly not-found message ── */
+      function showNotFound() {
+        container.innerHTML =
+          '<a href="news.html" class="btn-back">&#8592; Back to News</a>' +
+          '<div class="ni-not-found">' +
+            '<h2>Item not found</h2>' +
+            '<p>The news item you\'re looking for doesn\'t exist or the link may be outdated.</p>' +
+          '</div>';
+      }
+
+      /* ── look up the item by ?id= ── */
+      var params = new URLSearchParams(window.location.search);
+      var id     = params.get('id');
+
+      if (!id) { showNotFound(); return; }
+
+      var item = null;
+      for (var i = 0; i < NEWS_ITEMS.length; i++) {
+        if (NEWS_ITEMS[i].id === id) { item = NEWS_ITEMS[i]; break; }
+      }
+
+      if (!item) { showNotFound(); return; }
+
+      /* ── update <title> ── */
+      document.title = item.cardTitle + ' | Silvia Rossi';
+
+      /* ── build page HTML ── */
+      var bannerHtml = '';
+      if (item.banner) {
+        bannerHtml =
+          '<div class="ni-banner">' +
+            '<img src="' + item.banner + '" alt="">' +
+          '</div>';
+      }
+
+      var categoryHtml = item.category
+        ? '<span class="ni-category">' + item.category + '</span>'
+        : '';
+
+      var sourceUrl = item.cardUrl || item.url;
+
+      container.innerHTML =
+        '<a href="news.html" class="btn-back">&#8592; Back to News</a>' +
+        bannerHtml +
+        '<article class="ni-card">' +
+          '<div class="ni-meta">' +
+            categoryHtml +
+            '<span class="ni-date">' + item.cardDate + '</span>' +
+          '</div>' +
+          '<h1 class="ni-title">' + item.cardTitle + '</h1>' +
+          '<hr class="ni-divider" aria-hidden="true">' +
+          '<div class="ni-body">' + (item.fullText || '') + '</div>' +
+          '<div class="ni-actions">' +
+            '<a href="' + sourceUrl + '" target="_blank" rel="noopener" class="btn-source">' +
+              'View source &#8599;' +
+            '</a>' +
+          '</div>' +
+        '</article>';
+    })();
+  </script>
+
+</body>
+</html>

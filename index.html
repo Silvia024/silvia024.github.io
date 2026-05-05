@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silvia Rossi | Senior Scientist in Immersive Interactive Systems</title>
+  <!-- FIX: meta description now matches actual title/role on page -->
+  <meta name="description" content="Silvia Rossi, PhD — Postdoctoral Researcher and Senior Scientist at CWI Amsterdam. Research in immersive multimedia systems and social XR.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; font-weight: 400; background: #dce8ef; min-height: 100vh; display: flex; flex-direction: column; }
+    a { text-decoration: none; }
+
+    /* ── NAVBAR ─────────────────────────────────────────── */
+    .navbar {
+      background: #F0B400;
+      padding: 0 40px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .nav-logo {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+    .nav-brand-text { display: flex; flex-direction: column; }
+    .nav-brand-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a2b3c;
+      text-decoration: none;
+    }
+    .nav-brand-degree {
+      font-size: 13px;
+      color: #1a2b3c;
+      font-weight: 400;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      list-style: none;
+    }
+    .nav-links a {
+      display: block;
+      padding: 8px 22px;
+      border: 2px solid #1a2b3c;
+      border-radius: 50px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a2b3c;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-links a:hover,
+    .nav-links a[aria-current="page"] {
+      background: #1a2b3c;
+      color: #F0B400;
+      text-decoration: none;
+    }
+
+    /* ── HERO ───────────────────────────────────────────── */
+    .hero {
+      background: #dce8ef;
+      padding: 40px 0 24px;
+    }
+    /*
+      FIX: removed fixed 400px left column — switched to minmax so the photo
+      column can shrink gracefully between 900px and 1200px without crushing
+      the right column.
+    */
+    .hero-inner {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: minmax(260px, 380px) 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+    .hero-photo {
+      width: 100%;
+      max-width: 360px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .hero-photo:hover { transform: scale(1.03); box-shadow: 0 8px 32px rgba(0,0,0,0.18); }
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .social-icons a {
+      width: 46px;
+      height: 46px;
+      background: #F0B400;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .social-icons a:hover { background: #c89600; transform: scale(1.08); }
+    /* FIX: aria-hidden on SVGs prevents screen reader double-announcement;
+       fill set on parent so hover via CSS still works */
+    .social-icons svg { width: 20px; height: 20px; fill: #1a2b3c; display: block; }
+
+    /* ── HERO RIGHT ─────────────────────────────────────── */
+    .hero-right { padding-left: 0; }
+
+    /*
+      FIX: removed hardcoded margin-left: -92px overlap.
+      The name bubble now sits naturally in the right column.
+      The visual overlap effect is preserved on desktop using a negative
+      margin that's proportional and reset cleanly on mobile.
+    */
+    .hero-name-bubble {
+      display: inline-block;
+      background: #f5f0e8;
+      border-radius: 50px;
+      padding: 14px 36px 14px 28px;
+      margin-bottom: 20px;
+      margin-left: -60px;          /* overlap into photo column — reset in media query */
+      transition: box-shadow 0.2s ease;
+    }
+    .hero-name-bubble h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(32px, 4.5vw, 58px); /* FIX: fluid type — won't overflow at mid-widths */
+      font-weight: 300;
+      color: #1a2b3c;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+    /* FIX: removed cursor:default + hover shadow — no interaction, no false affordance */
+
+    .hero-tagline {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a2b3c;
+      background: #f5e07a;
+      display: inline;
+      line-height: 1.8;
+      padding: 2px 0;
+    }
+    .hero-tagline-wrap { margin-bottom: 16px; line-height: 2; }
+
+    /* FIX: decorative divider is now hidden from assistive tech */
+    .hero-divider {
+      width: 140px;
+      height: 2px;
+      background: #c89600;
+      margin: 16px 0 20px;   /* left-aligned to match text, not centred */
+    }
+    .hero-bio p { font-size: 15px; color: #2c3e50; line-height: 1.75; margin-bottom: 14px; font-weight: 300; }
+
+    /* ── NEWS SECTION ───────────────────────────────────── */
+    /*
+      FIX: removed double-padding (section had 80px sides + inner had 40px padding).
+      Now a single centred container matches the hero-inner approach.
+    */
+    .news-section {
+      background: #dce8ef;
+      padding: 16px 0 60px;
+    }
+    .news-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 40px 0;
+    }
+    .news-box {
+      background: #ffffff;
+      border: 2px solid #c89600;
+      border-radius: 8px;
+      padding: 32px 40px 28px;
+      box-shadow: 4px 4px 0px #c89600;
+    }
+    .news-box-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a2b3c;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-color: #F0B400;
+      margin-bottom: 20px;
+    }
+    .news-intro {
+      font-size: 15px;
+      color: #2c3e50;
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    .news-list { list-style: disc; padding-left: 24px; }
+    .news-list li {
+      font-size: 15px;
+      color: #2c3e50;
+      padding: 10px 0;
+      line-height: 1.7;
+    }
+    .news-date { font-weight: 600; }
+    .news-list li::marker { color: #1a2b3c; }
+    .news-list a { color: #1a2b3c; text-decoration: underline; }
+    .news-list strong { font-weight: 700; }
+    .read-more-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 24px;
+    }
+    .btn-read-more {
+      display: inline-block;
+      padding: 10px 28px;
+      background: #f5e07a;
+      border: 2px solid #c89600;
+      border-radius: 50px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a2b3c;
+      transition: background 0.2s;
+    }
+    .btn-read-more:hover { background: #f0c040; text-decoration: none; }
+
+    /* ── FOOTER ─────────────────────────────────────────── */
+    .footer {
+      margin-top: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+    .footer-left  { background: #d4a200; padding: 30px 40px; }
+    .footer-right { background: #f5e07a; padding: 30px 40px; display: flex; align-items: center; justify-content: flex-end; }
+    .footer address { font-style: normal; font-size: 14px; color: #1a2b3c; line-height: 1.8; }
+    .footer address a { color: #1a2b3c; text-decoration: underline; }
+    .footer-copy { font-size: 14px; color: #1a2b3c; }
+
+    /* ── NAV TOGGLE (mobile) ────────────────────────────── */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: #1a2b3c; border-radius: 2px; }
+
+    /* ── RESPONSIVE ─────────────────────────────────────── */
+
+    /* Mid-range: photo starts shrinking, overlap removed early */
+    @media (max-width: 1050px) {
+      .hero-name-bubble { margin-left: -30px; }
+      .hero-name-bubble h1 { white-space: normal; }
+    }
+
+    @media (max-width: 900px) {
+      .hero { padding: 20px 0 12px; }
+      .hero-inner {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+        gap: 20px;
+        justify-items: center;
+      }
+      .hero-left { width: 100%; max-width: 320px; }
+      .hero-photo { max-width: 220px; }
+      .hero-right { width: 100%; padding-left: 0; }
+      /* FIX: remove overlap on mobile — no fixed px to get wrong */
+      .hero-name-bubble { margin-left: 0; }
+      .hero-name-bubble h1 { font-size: 34px; white-space: normal; }
+      .news-section { padding: 12px 0 40px; }
+      .news-inner { padding: 16px 24px 0; }
+      .news-box { padding: 24px 20px 20px; }
+      .footer { grid-template-columns: 1fr; }
+      .footer-right { justify-content: flex-start; }
+      /* FIX: mobile nav uses position:sticky-relative top, not fixed px */
+      .nav-toggle { display: flex; }
+      .nav-links {
+        display: none;
+        position: absolute;        /* relative to stacking context of sticky navbar */
+        top: 90px;
+        left: 0;
+        right: 0;
+        background: #F0B400;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 8px 20px 16px;
+        gap: 6px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { text-align: center; }
+      .navbar { padding: 0 20px; position: sticky; }  /* ensure absolute child is offset correctly */
+    }
+
+    @media (max-width: 480px) {
+      .hero-name-bubble h1 { font-size: 28px; }
+      .hero-tagline { font-size: 15px; }
+      .news-box { padding: 20px 16px; }
+      .footer-left, .footer-right { padding: 20px 24px; }
+    }
+
+    /* ── ACCESSIBILITY: focus-visible outlines ──────────── */
+    :focus { outline: none; }
+    :focus-visible {
+      outline: 3px solid #1a2b3c;
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    .nav-links a:focus-visible,
+    .nav-brand:focus-visible { border-radius: 50px; }
+    .social-icons a:focus-visible { border-radius: 50%; }
+    .btn-read-more:focus-visible { border-radius: 50px; }
+    .nav-toggle:focus-visible { border-radius: 4px; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/icons/VR_pupina_website_yellow.png" alt="Silvia Rossi home" class="nav-logo">
+      <div class="nav-brand-text">
+        <span class="nav-brand-name">Silvia Rossi</span>
+        <span class="nav-brand-degree">PhD</span>
+      </div>
+    </a>
+    <!-- FIX: aria-expanded added; toggled by JS -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <img
+          src="assets/img/Silvia_2022.jpg"
+          alt="Portrait of Silvia Rossi"
+          class="hero-photo">
+        <div class="social-icons" aria-label="Social links">
+          <!-- FIX: aria-hidden on SVGs prevents double-reading by screen readers -->
+          <a href="mailto:s.rossi@cwi.nl" aria-label="Send email to Silvia Rossi">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          <a href="https://scholar.google.com/citations?user=eez4fs4AAAAJ&hl=it" target="_blank" rel="noopener" aria-label="Google Scholar profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5 12 0z"/></svg>
+          </a>
+          <a href="https://twitter.com/SilviaRossi24" target="_blank" rel="noopener" aria-label="X (Twitter) profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/silvia-rossi-b8baa4a2/" target="_blank" rel="noopener" aria-label="LinkedIn profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-name-bubble">
+          <h1>Silvia Rossi, PhD</h1>
+        </div>
+        <!-- FIX: tagline marked as <p> with role context for semantic outline -->
+        <p class="hero-tagline-wrap">
+          <span class="hero-tagline">Postdoctoral Researcher at CWI (Amsterdam)<br>Immersive Multimedia Systems &amp; XR<br><a href="https://records.sigmm.org/" target="_blank" rel="noopener" style="color:#1a2b3c;">ACM SIGMM</a> Director of Conferences</span>
+        </p>
+        <!-- FIX: aria-hidden on decorative divider -->
+        <div class="hero-divider" aria-hidden="true"></div>
+        <div class="hero-bio">
+          <p>I am a Senior Scientist in the Distributed and Interactive Systems (DIS) group at the Centrum Wiskunde &amp; Informatica (CWI) in Amsterdam.</p>
+          <p>My research investigates user behaviour and system design for immersive multimedia systems, particularly social Extended Reality (XR), with the goal of enabling scalable and engaging interactive experiences.</p>
+        </div>
+      </div>
+    </div><!-- /hero-inner -->
+  </section>
+
+  <!-- LATEST NEWS -->
+  <section class="news-section" aria-label="Latest news">
+    <div class="news-inner">
+      <div class="news-box">
+        <h2 class="news-box-title">Latest News</h2>
+        <p class="news-intro">Recent updates, talks, and publications.</p>
+        <ul class="news-list" id="news-list"></ul>
+        <div class="read-more-wrap">
+          <a href="news.html" class="btn-read-more">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <address>
+        Centrum Wiskunde &amp; Informatica<br>
+        Science Park 123, 1098XG<br>
+        Amsterdam, The Netherlands<br>
+        <a href="mailto:s.rossi@cwi.nl">s.rossi@cwi.nl</a>
+      </address>
+    </div>
+    <div class="footer-right">
+      <p class="footer-copy">© 2025 Silvia Rossi</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('open');
+      // FIX: keep aria-expanded in sync with visible state
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // FIX: close menu when focus leaves the navbar (keyboard nav)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && links.classList.contains('open')) {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  </script>
+
+  <!-- News list: data lives in js/news-data.js; first 5 items are shown -->
+  <script src="js/news-data.js"></script>
+  <script>
+    (function () {
+      var list = document.getElementById('news-list');
+      NEWS_ITEMS.slice(0, 5).forEach(function (item) {
+        var li = document.createElement('li');
+        li.innerHTML = '<span class="news-date">[' + item.indexDate + ']</span> ' + item.indexContent;
+        // rewrite the link to open the detail page (visual markup unchanged)
+        var anchor = li.querySelector('a');
+        if (anchor && item.id) {
+          anchor.href = 'news-item.html?id=' + item.id;
+          anchor.removeAttribute('target');
+          anchor.removeAttribute('rel');
+        }
+        list.appendChild(li);
+      });
+    })();
+  </script>
+</body>
+</html>

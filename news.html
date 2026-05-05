@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | Silvia Rossi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .news-card { background: #fff; border: 2px solid #e0c060; border-radius: 8px; box-shadow: 4px 4px 0 #c8a040; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.15s; }
+    .news-card:hover { transform: translateY(-3px); }
+    .news-card-img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+    .news-card-body { padding: 16px 18px 18px; flex: 1; display: flex; flex-direction: column; }
+    .news-card-date { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+    .news-card-title { font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #1a2b3c; margin-bottom: 8px; line-height: 1.4; }
+    .news-card-text { font-size: 13px; color: #555; line-height: 1.65; flex: 1; margin-bottom: 14px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+    .news-card-link { font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700; color: #1a2b3c; border: 1.5px solid #1a2b3c; border-radius: 50px; padding: 5px 16px; display: inline-block; align-self: flex-start; transition: background 0.2s, color 0.2s; }
+    .news-card-link:hover { background: #1a2b3c; color: #f0a500; text-decoration: none; }
+    @media (max-width: 900px) { .news-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 540px) { .news-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <img src="https://static.wixstatic.com/media/6e11d6_16ce01b5952142beba5b39ee5ff75e01~mv2.png/v1/fill/w_52,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/VR_pupina_website_edited.png" alt="" class="nav-logo">
+      <div><span class="nav-brand-name">Silvia Rossi</span><span class="nav-brand-degree"> PhD</span></div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="news.html" class="active">News</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-wrap">
+      <h1 class="page-title">News</h1>
+      <div class="news-grid" id="news-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-col-dark"><address>Centrum Wiskunde &amp; Informatica<br>Science Park 123, 1098XG<br>Amsterdam, The Netherlands<br><a href="mailto:s.rossi@cwi.nl">s.rossi@cwi.nl</a></address></div>
+    <div class="footer-col-dark"></div>
+    <div class="footer-col-light"><p class="footer-copy">© 2025 Silvia Rossi</p></div>
+  </footer>
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      this.classList.toggle('open');
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+
+  <!-- News grid: data lives in js/news-data.js; all items are shown -->
+  <script src="js/news-data.js"></script>
+  <script>
+    (function () {
+      var grid = document.getElementById('news-grid');
+      NEWS_ITEMS.forEach(function (item) {
+        var imgHtml = item.cardImg
+          ? '<img src="' + item.cardImg + '" alt="" class="news-card-img" loading="lazy">'
+          : '';
+        var detailUrl = 'news-item.html?id=' + item.id;
+        var article = document.createElement('article');
+        article.className = 'news-card';
+        article.innerHTML =
+          imgHtml +
+          '<div class="news-card-body">' +
+            '<p class="news-card-date">' + item.cardDate + '</p>' +
+            '<h2 class="news-card-title">' + item.cardTitle + '</h2>' +
+            '<p class="news-card-text">' + item.cardText + '</p>' +
+            '<a href="' + detailUrl + '" class="news-card-link">Read more</a>' +
+          '</div>';
+        grid.appendChild(article);
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Silvia Rossi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .research-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .research-card { background: #fff; border: 2px solid #e0c060; border-radius: 8px; box-shadow: 4px 4px 0 #c8a040; overflow: hidden; display: flex; flex-direction: column; }
+    .research-card-img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; }
+    .research-card-body { padding: 22px 24px 24px; flex: 1; display: flex; flex-direction: column; }
+    .research-card-title { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; color: #1a2b3c; margin-bottom: 12px; }
+    .research-card-text { font-size: 14px; color: #555; line-height: 1.75; flex: 1; margin-bottom: 16px; }
+    .research-card-link { font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700; color: #1a2b3c; border: 1.5px solid #1a2b3c; border-radius: 50px; padding: 6px 18px; display: inline-block; align-self: flex-start; transition: background 0.2s, color 0.2s; }
+    .research-card-link:hover { background: #1a2b3c; color: #f0a500; text-decoration: none; }
+
+    .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 8px; }
+    .project-card { background: #fff; border: 2px solid #e0c060; border-radius: 8px; padding: 20px 22px; box-shadow: 3px 3px 0 #c8a040; }
+    .project-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #f0a500; margin-bottom: 6px; }
+    .project-name { font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700; color: #1a2b3c; margin-bottom: 8px; }
+    .project-desc { font-size: 13px; color: #555; line-height: 1.6; margin-bottom: 10px; }
+    .project-link { font-size: 13px; font-weight: 700; color: #1a5276; text-decoration: underline; }
+
+    @media (max-width: 800px) { .research-grid { grid-template-columns: 1fr; } .projects-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <img src="https://static.wixstatic.com/media/6e11d6_16ce01b5952142beba5b39ee5ff75e01~mv2.png/v1/fill/w_52,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/VR_pupina_website_edited.png" alt="" class="nav-logo">
+      <div><span class="nav-brand-name">Silvia Rossi</span><span class="nav-brand-degree"> PhD</span></div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-wrap">
+      <h1 class="page-title">Research Interests</h1>
+
+      <div class="research-grid">
+        <article class="research-card" id="immersive">
+          <img src="https://static.wixstatic.com/media/6e11d6_16ea109d042f4e5b814676bea0f0a527~mv2.png/v1/fill/w_448,h_321,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Project_Cover_002.png" alt="Immersive Communications" class="research-card-img" loading="lazy">
+          <div class="research-card-body">
+            <h2 class="research-card-title">Immersive Communications</h2>
+            <p class="research-card-text">A major challenge for the next decade is to design virtual, augmented, and mixed reality systems (VR at large) for real-world use cases such as healthcare, creative technology, e-education, and high-risk missions. This requires immersive systems to operate at scale, in a personalised manner, remaining bandwidth-tolerant whilst meeting quality and latency criteria. This can be accomplished only by a fundamental revolution of the coding/streaming/rendering chain that has to put the interactive user at the heart of the system rather than at the end of the chain.</p>
+            <a href="publications.html" class="research-card-link">More</a>
+          </div>
+        </article>
+
+        <article class="research-card" id="behaviour">
+          <img src="https://static.wixstatic.com/media/6e11d6_5440512f26e443c1909d658c667a0c85~mv2.jpg/v1/fill/w_448,h_321,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Project_Cover_edited.jpg" alt="User Behaviour Analysis" class="research-card-img" loading="lazy">
+          <div class="research-card-body">
+            <h2 class="research-card-title">User Behaviour Analysis in Immersive Systems</h2>
+            <p class="research-card-text">Do we understand how people interact with technology? Can we model users' behaviour in immersive systems, inferring the correlation between users' interactivity and the VR content? This research investigates head motion trajectories, navigation patterns, and social behaviour in 3-DoF and 6-DoF environments, using information-theoretic analysis, clustering, and machine learning to inform adaptive, user-centric system design.</p>
+            <a href="publications.html" class="research-card-link">More</a>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="section-heading">Current Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <p class="project-tag">EU Horizon</p>
+          <p class="project-name">TRANSMIXR</p>
+          <p class="project-desc">Enabling the future of media experiences through Social XR.</p>
+          <a href="https://transmixr.eu" target="_blank" rel="noopener" class="project-link">transmixr.eu →</a>
+        </div>
+        <div class="project-card">
+          <p class="project-tag">EU Horizon</p>
+          <p class="project-name">SPIRIT</p>
+          <p class="project-desc">Social Presence in Immersive Reality InTeraction.</p>
+          <a href="https://www.spirit-project.eu" target="_blank" rel="noopener" class="project-link">spirit-project.eu →</a>
+        </div>
+        <div class="project-card">
+          <p class="project-tag">National Project</p>
+          <p class="project-name">INDUX-R</p>
+          <p class="project-desc">Immersive data experiences and user interaction in XR.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-col-dark"><address>Centrum Wiskunde &amp; Informatica<br>Science Park 123, 1098XG<br>Amsterdam, The Netherlands<br><a href="mailto:s.rossi@cwi.nl">s.rossi@cwi.nl</a></address></div>
+    <div class="footer-col-dark"></div>
+    <div class="footer-col-light"><p class="footer-copy">© 2025 Silvia Rossi</p></div>
+  </footer>
+  <script>document.getElementById('navToggle').addEventListener('click',function(){this.classList.toggle('open');document.getElementById('navLinks').classList.toggle('open');});</script>
+</body>
+</html>
