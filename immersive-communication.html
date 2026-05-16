@@ -3,68 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Immersive Communications – Silvia Rossi</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/main.js"></script>
+  <title>Immersive Communications | Silvia Rossi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .research-intro { max-width: 780px; margin-bottom: 36px; font-size: 15px; line-height: 1.8; color: #2c3e50; }
+    .pub-year-section { margin-bottom: 28px; }
+    .pub-year-heading { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; color: #1a2b3c; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #F0B400; }
+    .pub-list { list-style: disc; padding-left: 22px; }
+    .pub-item { font-size: 14px; color: #444; line-height: 1.85; margin-bottom: 14px; max-width: 860px; }
+    .pub-item a { color: #1a5276; text-decoration: underline; }
+    .pub-item a:hover { color: #0e3a5e; }
+    .back-link { display: inline-block; margin-bottom: 28px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700; color: #1a2b3c; border: 1.5px solid #1a2b3c; border-radius: 50px; padding: 5px 16px; transition: background 0.2s, color 0.2s; }
+    .back-link:hover { background: #1a2b3c; color: #F0B400; text-decoration: none; }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="nav container">
-      <div class="nav-brand"><a href="index.html">Silvia&nbsp;Rossi</a></div>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <ul class="nav-links">
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="research.html" class="active">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-      </ul>
-    </div>
-  </header>
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/icons/VR_pupina_website_yellow.png" alt="Silvia Rossi home" class="nav-logo">
+      <div><span class="nav-brand-name">Silvia Rossi</span><span class="nav-brand-degree"> PhD</span></div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+    </ul>
+  </nav>
 
   <main>
-    <section class="container">
-      <h2 class="section-title">Immersive Communications</h2>
-      <p>Immersive communication systems allow remote participants to
-        experience a shared environment with six degrees of freedom (6DoF).
-        My research in this area focuses on understanding the media
-        requirements, network constraints and user quality of experience
-        when transmitting volumetric content. I explore capture, coding
-        and streaming techniques to enable interactive telepresence in
-        AR/VR.</p>
-      <p>Below is a selection of publications related to this topic.</p>
-      <h3>Relevant Publications</h3>
-      <ul class="publication-list">
-        <li class="publication-item">
-          S. Rossi, J. Doe, <em>Adaptive Streaming of Volumetric Video Based on
-          Gaze</em>, ACM MMSys 2025. DOI: <a href="https://doi.org/10.0000/immcomm1">10.0000/immcomm1</a>.
-        </li>
-        <li class="publication-item">
-          S. Rossi, M. Smith, <em>Measuring Quality of Experience in
-          Telepresence Systems</em>, IEEE VR 2024. DOI: <a href="https://doi.org/10.0000/immcomm2">10.0000/immcomm2</a>.
-        </li>
-        <li class="publication-item">
-          S. Rossi, A. Nguyen, <em>Spatial Audio Rendering for 6DoF VR
-          Applications</em>, IEEE/ACM TOMM 2023. DOI: <a href="https://doi.org/10.0000/immcomm3">10.0000/immcomm3</a>.
-        </li>
-      </ul>
-    </section>
+    <div class="page-wrap">
+      <a href="research.html" class="back-link">← Research</a>
+      <h1 class="page-title">Immersive Communications</h1>
+
+      <div class="research-intro">
+        <p>Virtual Reality (VR) systems are expected to become widespread in the near future, with applications not limited to entertainment but extending to e-healthcare, e-education, and many others. VR communications involve omnidirectional (360° or spherical) videos that provide an immersive sensation to the viewer, who is virtually placed at the centre of a sphere and can navigate the scene with 3-Degrees of Freedom (3-DoF) or, in more advanced 6-DoF systems, move freely through the environment.</p>
+        <p>The novel geometry of this content, the high spatio-temporal resolution required, and the stringent low-latency constraints raise new challenges across the entire end-to-end multimedia chain — from signal acquisition and representation to compression, delivery, and rendering. Our research is focused on optimising the media delivery of VR content over band-limited networks and developing personalised, user-, content- and application-dependent adaptive streaming strategies.</p>
+      </div>
+
+      <section class="pub-year-section">
+        <h2 class="pub-year-heading">Selected Publications</h2>
+        <ul class="pub-list">
+          <li class="pub-item">V. Pradhan, S. Rossi, and P. Cesar. "Exploring Entropy-Based Solutions for Trajectory Prediction in Virtual Reality." <em>MMVE '25</em>, ACM, 2025. DOI: <a href="https://dl.acm.org/doi/10.1145/3712677.3720460" target="_blank" rel="noopener">10.1145/3712677.3720460</a></li>
+          <li class="pub-item">J. Jansen, T. Röggla, S. Rossi, I. Viola, and P. Cesar. "Open-Sourcing VR2Gather: A Collaborative Social VR System for Adaptive Multi-Party Real Time Communication." <em>ACM MM '24</em>, 2024. DOI: <a href="https://doi.org/10.1145/3664647.3685515" target="_blank" rel="noopener">10.1145/3664647.3685515</a></li>
+          <li class="pub-item">S. Rossi, A. Guedes, and L. Toni. "Streaming and User Behaviour in Omnidirectional Videos." In <em>Immersive Video Technologies</em>, Elsevier, 2022. <a href="https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780323917551000092?via%3Dihub" target="_blank" rel="noopener">[Link]</a></li>
+          <li class="pub-item">S. Rossi. "Understanding User Interactivity for the Next-Generation Immersive Communication: Design, Optimisation, and Behavioural Analysis." Doctoral thesis, UCL, 2022. <a href="https://discovery.ucl.ac.uk/id/eprint/10143615/" target="_blank" rel="noopener">[Link]</a></li>
+          <li class="pub-item">S. Rossi, C. Ozcinar, A. Smolic, and L. Toni. "Do Users Behave Similarly in VR? Investigation of the User Influence on the System Design." <em>ACM TOMM</em>, 2020. DOI: <a href="https://dl.acm.org/doi/10.1145/3381846" target="_blank" rel="noopener">10.1145/3381846</a></li>
+          <li class="pub-item">S. Rossi and L. Toni. "Understanding User Navigation in Immersive Experience: An Information-Theoretic Analysis." <em>MMVE '20</em>, ACM, 2020. DOI: <a href="https://doi.org/10.1145/3386293.3397115" target="_blank" rel="noopener">10.1145/3386293.3397115</a></li>
+          <li class="pub-item">S. Rossi and L. Toni. "Navigation-Aware Adaptive Streaming Strategies for Omnidirectional Video." <em>IEEE MMSP 2017</em>. DOI: <a href="https://doi.org/10.1109/MMSP.2017.8122230" target="_blank" rel="noopener">10.1109/MMSP.2017.8122230</a></li>
+        </ul>
+      </section>
+    </div>
   </main>
 
-  <footer>
-    <div>
-      <strong>Centrum&nbsp;Wiskunde&nbsp;&amp;&nbsp;Informatica</strong><br>
-      Science Park 123, 1098 XG Amsterdam<br>
-      Netherlands
-    </div>
-    <div>
-      <strong>Contact</strong><br>
-      Email: <a href="mailto:example@example.com">example@example.com</a><br>
-      Twitter: @yourhandle
-    </div>
-    <div class="copyright">
-      &copy; <span id="year">2026</span> Silvia&nbsp;Rossi. All rights reserved.
-    </div>
+  <footer class="footer">
+    <div class="footer-col-dark"><address>Centrum Wiskunde &amp; Informatica<br>Science Park 123, 1098XG<br>Amsterdam, The Netherlands<br><a href="mailto:s.rossi@cwi.nl">s.rossi@cwi.nl</a></address></div>
+    <div class="footer-col-dark"></div>
+    <div class="footer-col-light"><p class="footer-copy">© 2025 Silvia Rossi</p></div>
   </footer>
+  <script>document.getElementById('navToggle').addEventListener('click',function(){this.classList.toggle('open');document.getElementById('navLinks').classList.toggle('open');});</script>
 </body>
 </html>

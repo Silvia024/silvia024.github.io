@@ -3,67 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>User Behaviour Analysis – Silvia Rossi</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/main.js"></script>
+  <title>User Behaviour Analysis | Silvia Rossi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .research-intro { max-width: 780px; margin-bottom: 36px; font-size: 15px; line-height: 1.8; color: #2c3e50; }
+    .pub-year-section { margin-bottom: 28px; }
+    .pub-year-heading { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; color: #1a2b3c; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #F0B400; }
+    .pub-list { list-style: disc; padding-left: 22px; }
+    .pub-item { font-size: 14px; color: #444; line-height: 1.85; margin-bottom: 14px; max-width: 860px; }
+    .pub-item a { color: #1a5276; text-decoration: underline; }
+    .pub-item a:hover { color: #0e3a5e; }
+    .back-link { display: inline-block; margin-bottom: 28px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700; color: #1a2b3c; border: 1.5px solid #1a2b3c; border-radius: 50px; padding: 5px 16px; transition: background 0.2s, color 0.2s; }
+    .back-link:hover { background: #1a2b3c; color: #F0B400; text-decoration: none; }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="nav container">
-      <div class="nav-brand"><a href="index.html">Silvia&nbsp;Rossi</a></div>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <ul class="nav-links">
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="research.html" class="active">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-      </ul>
-    </div>
-  </header>
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/icons/VR_pupina_website_yellow.png" alt="Silvia Rossi home" class="nav-logo">
+      <div><span class="nav-brand-name">Silvia Rossi</span><span class="nav-brand-degree"> PhD</span></div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+    </ul>
+  </nav>
 
   <main>
-    <section class="container">
-      <h2 class="section-title">User Behaviour Analysis in VR</h2>
-      <p>This research strand focuses on understanding how users interact
-        with immersive environments. By analysing gaze direction, head
-        movements and physiological responses, we gain insights into
-        attentional patterns and design adaptive media experiences. We
-        develop tools for collecting and modelling behavioural data and
-        evaluate how factors such as field‑of‑view, latency and scene
-        content affect user engagement.</p>
-      <p>Selected publications are listed below.</p>
-      <h3>Relevant Publications</h3>
-      <ul class="publication-list">
-        <li class="publication-item">
-          S. Rossi, J. Lee, <em>Predicting User Attention in 360° Video</em>, ACM CHI 2024. DOI: <a href="https://doi.org/10.0000/ub1">10.0000/ub1</a>.
-        </li>
-        <li class="publication-item">
-          S. Rossi, K. Patel, <em>Motion Prediction for Reduced Latency in VR
-          Streaming</em>, IEEE VR 2023. DOI: <a href="https://doi.org/10.0000/ub2">10.0000/ub2</a>.
-        </li>
-        <li class="publication-item">
-          S. Rossi, L. Chen, <em>Visual Attention Modelling for Adaptive 6DoF
-          Experiences</em>, Multimedia Tools & Applications 2022. DOI: <a href="https://doi.org/10.0000/ub3">10.0000/ub3</a>.
-        </li>
-      </ul>
-    </section>
+    <div class="page-wrap">
+      <a href="research.html" class="back-link">← Research</a>
+      <h1 class="page-title">User Behaviour Analysis in Immersive Systems</h1>
+
+      <div class="research-intro">
+        <p>One of the major challenges for the next decade is to design virtual reality systems for real-world use cases — healthcare, entertainment, e-education. In these novel applications, the user becomes an active consumer that interacts with the content in a fully immersive environment. This interactivity can push the limits of both connectivity and computation.</p>
+        <p>To avoid this, VR interactive systems will need to operate at scale in a personalised manner, remaining bandwidth-tolerant whilst meeting quality and latency criteria. This can be accomplished only by a fundamental revolution of the coding/streaming/rendering chain that has to put the interactive user at the heart — rather than at the end — of the chain. A major limitation remains the lack of understanding of users' behaviour in a VR experience. We are interested in quantifying similarities not only among different users but also for the same viewer across contents, uncovering hidden patterns in immersive navigation.</p>
+      </div>
+
+      <section class="pub-year-section">
+        <h2 class="pub-year-heading">Selected Publications</h2>
+        <ul class="pub-list">
+          <li class="pub-item">J. Williamson, S. Rossi, R. Johnstone, I. Viola, J. Williamson, T. Röggla, D. A. Shamma, and P. Cesar. "Social Density and its Impact on Behaviour in Virtual Environments." <em>IXR '25</em>, ACM, 2025. DOI: <a href="https://doi.org/10.1145/3746269.3760421" target="_blank" rel="noopener">10.1145/3746269.3760421</a></li>
+          <li class="pub-item">S. van Damme, J. Jansen, S. Rossi, and P. Cesar. "From Individual QoE to Shared Mental Models: A Novel Evaluation Paradigm for Collaborative XR." <em>QoMEX 2025</em>. DOI: <a href="https://doi.org/10.1109/QoMEX65720.2025.11219992" target="_blank" rel="noopener">10.1109/QoMEX65720.2025.11219992</a></li>
+          <li class="pub-item">X. Zhou, I. Viola, S. Rossi, and P. Cesar. "Comparison of Visual Saliency for Dynamic Point Clouds: Task-free vs. Task-dependent." <em>IEEE TVCG</em>, 2025. DOI: <a href="https://ieeexplore.ieee.org/abstract/document/10922128" target="_blank" rel="noopener">10.1109/TVCG.2025.3549863</a></li>
+          <li class="pub-item">S. Rossi, I. Viola, L. Toni, and P. Cesar. "A Clustering Approach to Unveil User Similarities in 6-DoF Extended Reality Applications." <em>ACM TOMM</em>, 2024. DOI: <a href="https://doi.org/10.1145/3701734" target="_blank" rel="noopener">10.1145/3701734</a></li>
+          <li class="pub-item">S. Lee, I. Viola, S. Rossi, Z. Guo, I. Reimat, K. Ławicka, A. Striner, and P. Cesar. "Designing and Evaluating a VR Lobby for a Socially Enriching Remote Opera Watching Experience." <em>IEEE TVCG</em>, 2024. DOI: <a href="https://doi.org/10.1109/TVCG.2024.3372081" target="_blank" rel="noopener">10.1109/TVCG.2024.3372081</a></li>
+          <li class="pub-item">T. Röggla, D. Shamma, J. Williamson, I. Viola, S. Rossi, and P. Cesar. "A Platform for Collecting User Behaviour Data during Social VR Experiments Using Mozilla Hubs." <em>MMVE '24</em>, ACM, 2024. DOI: <a href="https://doi.org/10.1145/3652212.3652225" target="_blank" rel="noopener">10.1145/3652212.3652225</a></li>
+          <li class="pub-item">S. Rossi, I. Viola, L. Toni, and P. Cesar. "Extending 3-DoF Metrics to Model User Behaviour Similarity in 6-DoF Immersive Applications." <em>ACM MMSys 2023</em>. DOI: <a href="https://doi.org/10.1145/3587819.3590976" target="_blank" rel="noopener">10.1145/3587819.3590976</a></li>
+          <li class="pub-item">S. Rossi, L. Toni, and P. Cesar. "Correlation between Entropy and Prediction Error in VR Head Motion Trajectories." <em>IXR '23</em>, ACM, 2023. DOI: <a href="https://doi.org/10.1145/3607546.3616805" target="_blank" rel="noopener">10.1145/3607546.3616805</a></li>
+          <li class="pub-item">S. Rossi, I. Viola, and P. Cesar. "Behavioural Analysis in a 6-DoF VR System: Influence of Content, Quality and User Disposition." <em>IXR '22</em>, ACM, 2022. DOI: <a href="https://doi.org/10.1145/3552483.3556454" target="_blank" rel="noopener">10.1145/3552483.3556454</a></li>
+          <li class="pub-item">S. Rossi. "Understanding User Interactivity for the Next-Generation Immersive Communication: Design, Optimisation, and Behavioural Analysis." Doctoral thesis, UCL, 2022. <a href="https://discovery.ucl.ac.uk/id/eprint/10143615/" target="_blank" rel="noopener">[Link]</a></li>
+          <li class="pub-item">S. Rossi, I. Viola, J. Jansen, S. Subramanyam, L. Toni, and P. Cesar. "Influence of Narrative Elements on User Behaviour in Photorealistic Social VR." <em>MMVE '21</em>, ACM, 2021. DOI: <a href="https://doi.org/10.1145/3458307.3463371" target="_blank" rel="noopener">10.1145/3458307.3463371</a></li>
+          <li class="pub-item">S. Rossi, I. Viola, L. Toni, and P. Cesar. "A New Challenge: Behavioural Analysis of 6-DoF User When Consuming Immersive Media." <em>IEEE ICIP 2021</em>. DOI: <a href="https://doi.org/10.1109/ICIP42928.2021.9506525" target="_blank" rel="noopener">10.1109/ICIP42928.2021.9506525</a></li>
+          <li class="pub-item">S. Rossi, C. Ozcinar, A. Smolic, and L. Toni. "Do Users Behave Similarly in VR? Investigation of the User Influence on the System Design." <em>ACM TOMM</em>, 2020. DOI: <a href="https://dl.acm.org/doi/10.1145/3381846" target="_blank" rel="noopener">10.1145/3381846</a></li>
+          <li class="pub-item">S. Rossi, F. De Simone, P. Frossard, and L. Toni. "Spherical Clustering of Users Navigating in 360° Content." <em>IEEE ICASSP 2019</em>. DOI: <a href="https://doi.org/10.1109/ICASSP.2019.8683854" target="_blank" rel="noopener">10.1109/ICASSP.2019.8683854</a></li>
+        </ul>
+      </section>
+    </div>
   </main>
 
-  <footer>
-    <div>
-      <strong>Centrum&nbsp;Wiskunde&nbsp;&amp;&nbsp;Informatica</strong><br>
-      Science Park 123, 1098 XG Amsterdam<br>
-      Netherlands
-    </div>
-    <div>
-      <strong>Contact</strong><br>
-      Email: <a href="mailto:example@example.com">example@example.com</a><br>
-      Twitter: @yourhandle
-    </div>
-    <div class="copyright">
-      &copy; <span id="year">2026</span> Silvia&nbsp;Rossi. All rights reserved.
-    </div>
+  <footer class="footer">
+    <div class="footer-col-dark"><address>Centrum Wiskunde &amp; Informatica<br>Science Park 123, 1098XG<br>Amsterdam, The Netherlands<br><a href="mailto:s.rossi@cwi.nl">s.rossi@cwi.nl</a></address></div>
+    <div class="footer-col-dark"></div>
+    <div class="footer-col-light"><p class="footer-copy">© 2025 Silvia Rossi</p></div>
   </footer>
+  <script>document.getElementById('navToggle').addEventListener('click',function(){this.classList.toggle('open');document.getElementById('navLinks').classList.toggle('open');});</script>
 </body>
 </html>

@@ -55,6 +55,22 @@
  */
 const NEWS_ITEMS = [
   {
+    isoDate: "2026-05-09",
+    id: "spring-school-4th-2026",
+    category: "Event",
+    indexDate: "09 May 2026",
+    indexContent: `🌱 <a href="https://www.dis.cwi.nl/news/2026-05-09-4th-edition-of-spring-school-on-social-xr-acm-seasonal-school/" target="_blank" rel="noopener"><strong>4th Edition of the Spring School on Social XR</strong></a> — ACM Seasonal School`,
+    cardDate: "9 May 2026",
+    cardTitle: "4th Edition of the Spring School on Social XR — ACM Seasonal School",
+    cardText: "Over 30 students from technology, social sciences, and humanities attended this multidisciplinary ACM Europe School at CWI, featuring 11 lectures and 3 workshops led by 12 instructors.",
+    cardImg: "assets/img/news/2026-05-09-spring-school.JPG",
+    banner: "assets/img/news/2026-05-09-spring-school.JPG",
+    fullText: `<p>The 4th edition of the Spring School on Social XR took place April 20–23, 2026 at CWI Amsterdam, this year designated as an <strong>ACM Europe Seasonal School</strong>. Over 30 students from technology, social sciences, and humanities participated in this multidisciplinary event.</p>
+<p>The programme featured 11 lectures and 3 hands-on workshops led by 12 instructors, covering topics including trust and safety in virtual environments, ethical XR design, affective computing, AI-driven virtual humans, haptics, volumetric video, mobility in XR, and educational applications.</p>
+<p>The school was organised by Silvia Rossi, Irene Viola, Thomas Röggla, and Pablo Cesar (CWI), together with Omar Niamut (TNO). As the organisers put it: <em>''The future of immersive communication is not only technical but it is deeply human. Understanding how people trust, feel, move, and interact in virtual environments is as critical as the systems that make those environments possible."</em></p>`,
+    url: "https://www.dis.cwi.nl/news/2026-05-09-4th-edition-of-spring-school-on-social-xr-acm-seasonal-school/",
+  },
+  {
     isoDate: "2025-11-10",
     id: "keynote-sigmm-europe-2025",
     category: "Talk",
@@ -63,8 +79,8 @@ const NEWS_ITEMS = [
     cardDate: "10 November 2025",
     cardTitle: "Keynote at the ACM SIGMM Europe Chapter Symposium",
     cardText: `Title: <em>From Individual Immersion to Shared Experiences in Social XR.</em> Silvia outlined her research journey from modelling individual user behaviour in immersive spaces to designing and evaluating social XR experiences.`,
-    cardImg: "https://static.wixstatic.com/media/6e11d6_a59d4c3bafba40b48bee78805e7ac76e~mv2.jpg/v1/crop/x_4,y_0,w_2281,h_2289/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1761309943277_edited_edited.jpg",
-    banner: "https://static.wixstatic.com/media/6e11d6_a59d4c3bafba40b48bee78805e7ac76e~mv2.jpg/v1/crop/x_4,y_0,w_2281,h_2289/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1761309943277_edited_edited.jpg",
+    cardImg: "assets/img/news/keynote-sigmm-europe-2025.png",
+    banner: "assets/img/news/keynote-sigmm-europe-2025.png",
     fullText: `<p>Silvia delivered the keynote talk <em>From Individual Immersion to Shared Experiences in Social XR</em> at the kick-off meeting of the ACM SIGMM Europe Chapter Symposium.</p>
 <p>The talk traced her research journey: starting from understanding individual user behaviour in immersive media systems — including gaze, motion, and quality of experience — through to the design and evaluation of multi-user social XR environments. Silvia discussed the challenges of scaling immersive experiences from single-user studies to shared, collaborative social spaces, and presented findings from several recent projects conducted in the DIS group at CWI Amsterdam.</p>
 <p>The ACM SIGMM Europe Chapter Symposium brought together researchers from across Europe working in multimedia systems, human-computer interaction, and immersive media.</p>`,
@@ -79,28 +95,27 @@ const NEWS_ITEMS = [
     cardDate: "8 October 2025",
     cardTitle: "SURF Tech Trends: how CWI contributes to the use of XR for education and research",
     cardText: "The SURF Tech Trends report is a bi-annual report providing insight into the most important digital trends. Immersive technology – or eXtended Reality – was one of the topics covered.",
-    cardImg: "https://static.wixstatic.com/media/6e11d6_ff49209dbcd64913822b60ca64c7281d~mv2.jpg/v1/crop/x_1,y_0,w_498,h_500/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1759935219141_edited.jpg",
-    banner: "https://static.wixstatic.com/media/6e11d6_ff49209dbcd64913822b60ca64c7281d~mv2.jpg/v1/crop/x_1,y_0,w_498,h_500/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1759935219141_edited.jpg",
+    cardImg: "assets/img/news/2025-10-09-surf-tech-trends.jpg",
+    banner: "assets/img/news/2025-10-09-surf-tech-trends.jpg",
     fullText: `<p>Silvia Rossi contributed to the SURF Tech Trends report, a bi-annual publication by SURF — the collaborative organisation for IT in Dutch education and research — that identifies and analyses the most significant digital trends shaping higher education and academic research.</p>
 <p>Immersive technology, or eXtended Reality (XR), was one of the focal topics of the edition. The report explores how institutions are beginning to adopt VR and AR for teaching, collaboration, and research infrastructure, and how CWI's work in immersive multimedia systems contributes to that broader landscape.</p>
 <p>Silvia's research on user behaviour in social XR and scalable immersive systems was highlighted as an example of how fundamental research can underpin practical applications in education and beyond.</p>`,
     url: "https://www.dis.cwi.nl/news/2025-10-09-surf-tech-trends-how-cwi-contributes-to-the-use-of-xr-for-education-and-research/",
-    cardUrl: "https://www.silviarossi.info/copy-of-dis-researcher-co-organise-mm",
   },
   {
     isoDate: "2025-10-08",
     id: "mmsys-2025-south-africa",
     category: "Service",
     indexDate: "08 Oct 2025",
-    indexContent: `🗂️ <a href="https://www.silviarossi.info/copy-of-dis-researchers-organise-mmve" target="_blank" rel="noopener"><strong>DIS Researcher co-organises ACM MMSys 2025 in South Africa</strong></a>`,
+    indexContent: `🗂️ <a href="https://2025.acmmmsys.org/" target="_blank" rel="noopener"><strong>DIS Researcher co-organises ACM MMSys 2025 in South Africa</strong></a>`,
     cardDate: "8 October 2025",
     cardTitle: "DIS Researcher co-organises ACM MMSys 2025 in South Africa",
     cardText: "The international ACM conference Multimedia Systems (MMSys) 2025, a premier conference on multimedia systems, was successfully co-organised by Silvia Rossi, researcher of the DIS group.",
-    cardImg: "https://static.wixstatic.com/media/6e11d6_f17fa66d05b34cfb931084a0a1c3a10a~mv2.jpg/v1/crop/x_5,y_0,w_2990,h_3000/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/SU%20Engineering%20ACM%20Conf%20April%202025-98_ed.jpg",
-    banner: "https://static.wixstatic.com/media/6e11d6_f17fa66d05b34cfb931084a0a1c3a10a~mv2.jpg/v1/crop/x_5,y_0,w_2990,h_3000/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/SU%20Engineering%20ACM%20Conf%20April%202025-98_ed.jpg",
+    cardImg: "assets/img/news/2025-10-08-mmsys-2025.jpg",
+    banner: "assets/img/news/2025-10-08-mmsys-2025.jpg",
     fullText: `<p>Silvia Rossi served as co-organiser of ACM MMSys 2025, the 16th ACM International Conference on Multimedia Systems, held in Stellenbosch, South Africa. MMSys is a premier venue for research on multimedia systems, covering streaming, immersive media, quality of experience, and networked media applications.</p>
-<p>The conference brought together researchers and practitioners from around the world to present and discuss advances in multimedia systems design and evaluation. Silvia contributed to the organisation of the programme, including paper reviewing coordination and the co-located MMVE workshop on immersive and interactive media.</p>`,
-    url: "https://www.silviarossi.info/copy-of-dis-researchers-organise-mmve",
+<p>The conference brought together researchers and practitioners from around the world to present and discuss advances in multimedia systems design and evaluation. Silvia contributed to the organisation of the programme, including paper reviewing coordination.</p>`,
+    url: "https://2025.acmmmsys.org",
   },
   {
     isoDate: "2025-10-06",
@@ -111,8 +126,8 @@ const NEWS_ITEMS = [
     cardDate: "6 October 2025",
     cardTitle: "Best paper award at QoMEX 2025",
     cardText: "New way to measure group dynamics in Extended Reality (XR) — DIS wins the best paper award at the Quality of Multimedia Experience (QoMEX) 2025 conference.",
-    cardImg: "",
-    banner: "",
+    cardImg: "assets/img/news/2025-10-10-qomex-2025.png",
+    banner: "assets/img/news/2025-10-10-qomex-2025.png",
     fullText: `<p>Research from the Distributed and Interactive Systems (DIS) group at CWI won the <strong>Best Paper Award</strong> at QoMEX 2025, the International Conference on Quality of Multimedia Experience.</p>
 <p>The awarded paper introduces a new method for measuring group dynamics in Extended Reality (XR) environments — addressing a key challenge in social XR research where conventional individual-level metrics fail to capture the collective experience of co-present users.</p>
 <p>The work contributes to Silvia's broader research agenda on understanding and evaluating social behaviour in immersive multi-user systems, with implications for the design of scalable and engaging social XR platforms.</p>`,
@@ -127,8 +142,8 @@ const NEWS_ITEMS = [
     cardDate: "1 June 2025",
     cardTitle: "Elected ACM SIGMM Director of Conferences",
     cardText: "Silvia Rossi was elected as ACM SIGMM Director of Conferences.",
-    cardImg: "",
-    banner: "",
+    cardImg: "assets/img/news/2025-06-01-sigmm-director.png",
+    banner: "assets/img/news/2025-06-01-sigmm-director.png",
     fullText: `<p>Silvia Rossi was elected as <strong>Director of Conferences</strong> for ACM SIGMM, the Special Interest Group on Multimedia within the Association for Computing Machinery.</p>
 <p>In this role, Silvia oversees the organisation and coordination of the flagship ACM SIGMM conferences, including ACM Multimedia (MM) and ACM MMSys, supporting the global multimedia research community. The position reflects her active involvement in the research community and her commitment to fostering high-quality scientific exchange in multimedia systems and interactive media.</p>`,
     url: "https://records.sigmm.org/",
@@ -197,6 +212,22 @@ const NEWS_ITEMS = [
 <p>This paper presents the open-source release of VR2Gather, a collaborative social VR platform developed at CWI Amsterdam. VR2Gather supports real-time multi-user interaction in shared virtual environments using volumetric video representations of participants, enabling natural social presence without relying on avatars.</p>
 <p>The paper describes the system architecture, the challenges of streaming and synchronising volumetric content in real time across participants, and the open-source infrastructure that allows the research community to build on, reproduce, and extend the platform. The release represents a significant contribution to reproducibility in immersive media research.</p>`,
     url: "https://dl.acm.org/doi/10.1145/3664647.3685515",
+  },
+    {
+    isoDate: "2024-03-12",
+    id: "VR-Lobby-2024",
+    category: "Publication",
+    indexDate: "12 Mar 2024",
+    indexContent: `📄 <a href="https://ieeexplore.ieee.org/abstract/document/10458388" target="_blank" rel="noopener"><strong>New paper: Designing and Evaluating a VR Lobby for Remote Opera Watching</strong></a>`,
+    cardDate: "12 March 2024",
+    cardTitle: "New paper: Designing and Evaluating a VR Lobby for Remote Opera Watching",
+    cardText: `S. Lee, I. Viola, S. Rossi et al. "Designing and Evaluating a VR Lobby for a Socially Enriching Remote Opera Watching Experience." IEEE TVCG, presented at IEEE VR 2024.`,
+    cardImg: "assets/img/news/2024-03-12-vrlobby.png",
+    banner: "assets/img/news/2024-03-12-vrlobby.png",
+    fullText: `<p>S. Lee, I. Viola, S. Rossi, Z. Guo, I. Reimat, K. Ławicka, A. Striner, P. Cesar. <em>Designing and Evaluating a VR Lobby for a Socially Enriching Remote Opera Watching Experience.</em> IEEE Transactions on Visualization and Computer Graphics (TVCG), presented at IEEE VR 2024.</p>
+<p><strong>DOI:</strong> <a href="https://doi.org/10.1109/TVCG.2024.3372081" target="_blank" rel="noopener">10.1109/TVCG.2024.3372081</a></p>
+<p>This paper presents the design and user evaluation of a virtual reality lobby for social remote opera watching. The VR lobby allows geographically distributed audience members to meet, socialise, and share the experience of attending a live opera performance together. The study evaluates social presence, enjoyment, and interaction quality, with implications for the design of culturally rich social XR experiences.</p>`,
+    url: "https://ieeexplore.ieee.org/abstract/document/10458388",
   },
   {
     isoDate: "2024-01-05",
