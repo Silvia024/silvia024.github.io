@@ -22,12 +22,12 @@
       margin-top: 10px;
       line-height: 1.5;
     }
-    .research-banner-credit {
-      display: block;
+    .image-credit-note {
       font-size: 11px;
       color: #888;
-      font-style: normal;
-      margin-top: 4px;
+      margin-top: 40px;
+      padding-top: 12px;
+      border-top: 1px solid #c5d5dd;
     }
 
     /* ── Page intro ── */
@@ -65,14 +65,7 @@
       border: 2px solid #e0c060;
       display: block;
     }
-    .theme-img-placeholder {
-      width: 100%;
-      aspect-ratio: 16/10;
-      border-radius: 8px;
-      border: 2px solid #e0c060;
-      background: #1a2b3c;
-      display: block;
-    }
+
 
     .theme-title {
       font-family: 'Space Grotesk', sans-serif;
@@ -207,7 +200,6 @@
              class="research-banner-img">
         <figcaption class="research-banner-caption">
           Understanding users to build adaptive and collaborative immersive experiences.
-          <span class="research-banner-credit">Conceptual illustration created with OpenAI's image generation tool, with direction by Silvia Rossi.</span>
         </figcaption>
       </figure>
 
@@ -216,8 +208,9 @@
       <!-- ═══ Theme 1: Social Behaviour ═══ -->
       <section class="theme-row" id="social">
         <div class="theme-row-img">
-          <!-- TODO: theme image -->
-          <div class="theme-img-placeholder" role="img" aria-label="Social behaviour in shared virtual spaces — image coming soon"></div>
+          <img src="assets/img/social-behaviour.png"
+               alt="Three VR users connected by a shared orbital ring in an immersive social space"
+               class="theme-img">
         </div>
         <div class="theme-row-body">
           <h2 class="theme-title">Social Behaviour in Shared Virtual Spaces</h2>
@@ -237,8 +230,8 @@
       <section class="theme-row reverse" id="metrics">
         <div class="theme-row-img">
           <img
-            src="https://static.wixstatic.com/media/6e11d6_5440512f26e443c1909d658c667a0c85~mv2.jpg/v1/fill/w_448,h_321,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Project_Cover_edited.jpg"
-            alt="Head motion trajectories and navigation patterns visualised in a 6-DoF immersive environment"
+            src="assets/img/behavioural-metrics.png"
+            alt="A VR user's motion and gaze traces flowing into visualisation panels showing clustering and heatmap analysis"
             class="theme-img" loading="lazy">
         </div>
         <div class="theme-row-body">
@@ -259,8 +252,8 @@
       <section class="theme-row" id="streaming">
         <div class="theme-row-img">
           <img
-            src="https://static.wixstatic.com/media/6e11d6_16ea109d042f4e5b814676bea0f0a527~mv2.png/v1/fill/w_448,h_321,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Project_Cover_002.png"
-            alt="Adaptive streaming pipeline with a user-centric VR content delivery chain"
+            src="assets/img/adaptive-immersive-streaming-v2.png"
+            alt="Adaptive streaming pipeline: content encoding, network delivery and user feedback loop illustrated with a VR user receiving personalised immersive content"
             class="theme-img" loading="lazy">
         </div>
         <div class="theme-row-body">
@@ -309,6 +302,8 @@
           <!-- no theme tag: SPIRIT mapping not provided -->
         </div>
       </div>
+
+      <p class="image-credit-note">Conceptual illustrations on this page were created with OpenAI's image generation tool, with direction by Silvia Rossi.</p>
 
     </div>
   </main>
