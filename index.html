@@ -7,17 +7,17 @@
   <!-- FIX: meta description now matches actual title/role on page -->
   <meta name="description" content="Silvia Rossi, PhD — Senior Scientist at CWI Amsterdam. Research in immersive multimedia systems and social XR.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Poppins', sans-serif; font-weight: 400; background: #dce8ef; min-height: 100vh; display: flex; flex-direction: column; }
+    body { font-family: 'Space Grotesk', sans-serif; font-weight: 400; background: #dce8ef; min-height: 100vh; display: flex; flex-direction: column; }
     a { text-decoration: none; }
 
     /* ── NAVBAR ─────────────────────────────────────────── */
     .navbar {
       background: #F0B400;
       padding: 0 40px;
-      height: 90px;
+      height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -134,42 +134,48 @@
     /* ── HERO RIGHT ─────────────────────────────────────── */
     .hero-right { padding-left: 0; }
 
-    /*
-      FIX: removed hardcoded margin-left: -92px overlap.
-      The name bubble now sits naturally in the right column.
-      The visual overlap effect is preserved on desktop using a negative
-      margin that's proportional and reset cleanly on mobile.
-    */
     .hero-name-bubble {
       display: inline-block;
       background: #f5f0e8;
       border-radius: 50px;
       padding: 14px 36px 14px 28px;
       margin-bottom: 20px;
-      margin-left: -60px;          /* overlap into photo column — reset in media query */
       transition: box-shadow 0.2s ease;
     }
     .hero-name-bubble h1 {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(32px, 4.5vw, 58px); /* FIX: fluid type — won't overflow at mid-widths */
+      font-size: clamp(32px, 4.5vw, 52px);
       font-weight: 300;
       color: #1a2b3c;
       line-height: 1.1;
-      white-space: nowrap;
     }
-    /* FIX: removed cursor:default + hover shadow — no interaction, no false affordance */
 
-    .hero-tagline {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      color: #1a2b3c;
-      background: #f5e07a;
-      display: inline;
-      line-height: 1.8;
-      padding: 2px 0;
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
     }
-    .hero-tagline-wrap { margin-bottom: 16px; line-height: 2; }
+    .hero-tag {
+      background: rgba(240,180,0,0.2);
+      border: 1px solid rgba(240,180,0,0.55);
+      color: #1a2b3c;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 10px;
+      border-radius: 4px;
+    }
+    .hero-tagline-wrap {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a2b3c;
+      line-height: 1.65;
+      margin-bottom: 14px;
+      border-left: 3px solid #F0B400;
+      padding-left: 12px;
+    }
 
     /* FIX: decorative divider is now hidden from assistive tech */
     .hero-divider {
@@ -178,7 +184,7 @@
       background: #c89600;
       margin: 16px 0 20px;   /* left-aligned to match text, not centred */
     }
-    .hero-bio p { font-size: 15px; color: #2c3e50; line-height: 1.75; margin-bottom: 14px; font-weight: 300; }
+    .hero-bio p { font-size: 15px; color: #2c3e50; line-height: 1.75; margin-bottom: 14px; }
 
     /* ── NEWS SECTION ───────────────────────────────────── */
     /*
@@ -253,7 +259,7 @@
       display: grid;
       grid-template-columns: 2fr 1fr;
     }
-    .footer-left  { background: #d4a200; padding: 30px 40px; }
+    .footer-left  { background: #c89600; padding: 30px 40px; }
     .footer-right { background: #f5e07a; padding: 30px 40px; display: flex; align-items: center; justify-content: flex-end; }
     .footer address { font-style: normal; font-size: 14px; color: #1a2b3c; line-height: 1.8; }
     .footer address a { color: #1a2b3c; text-decoration: underline; }
@@ -273,9 +279,7 @@
 
     /* ── RESPONSIVE ─────────────────────────────────────── */
 
-    /* Mid-range: photo starts shrinking, overlap removed early */
     @media (max-width: 1050px) {
-      .hero-name-bubble { margin-left: -30px; }
       .hero-name-bubble h1 { white-space: normal; }
     }
 
@@ -290,8 +294,6 @@
       .hero-left { width: 100%; max-width: 320px; }
       .hero-photo { max-width: 220px; }
       .hero-right { width: 100%; padding-left: 0; }
-      /* FIX: remove overlap on mobile — no fixed px to get wrong */
-      .hero-name-bubble { margin-left: 0; }
       .hero-name-bubble h1 { font-size: 34px; white-space: normal; }
       .news-section { padding: 12px 0 40px; }
       .news-inner { padding: 16px 24px 0; }
@@ -303,7 +305,7 @@
       .nav-links {
         display: none;
         position: absolute;        /* relative to stacking context of sticky navbar */
-        top: 90px;
+        top: 72px;
         left: 0;
         right: 0;
         background: #F0B400;
@@ -391,10 +393,12 @@
         <div class="hero-name-bubble">
           <h1>Silvia Rossi, PhD</h1>
         </div>
-        <!-- FIX: tagline marked as <p> with role context for semantic outline -->
-        <p class="hero-tagline-wrap">
-          <span class="hero-tagline">Senior Scientist at CWI (Amsterdam)<br>Immersive Multimedia Systems &amp; XR<br><a href="https://records.sigmm.org/" target="_blank" rel="noopener" style="color:#1a2b3c;">ACM SIGMM</a> Director of Conferences</span>
-        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">Social XR</span>
+          <span class="hero-tag">Immersive Systems</span>
+          <span class="hero-tag">ACM SIGMM</span>
+        </div>
+        <p class="hero-tagline-wrap">Senior Scientist at CWI (Amsterdam)<br>Immersive Multimedia Systems &amp; XR<br><a href="https://records.sigmm.org/" target="_blank" rel="noopener" style="color:#1a2b3c;">ACM SIGMM</a> Director of Conferences</p>
         <!-- FIX: aria-hidden on decorative divider -->
         <div class="hero-divider" aria-hidden="true"></div>
         <div class="hero-bio">
