@@ -77,7 +77,8 @@
     /* ── HERO ───────────────────────────────────────────── */
     .hero {
       background: #dce8ef;
-      padding: 40px 0 24px;
+      padding: 40px 0 56px;
+      overflow: hidden;
     }
     /*
       FIX: removed fixed 400px left column — switched to minmax so the photo
@@ -342,6 +343,20 @@
     .social-icons a:focus-visible { border-radius: 50%; }
     .btn-read-more:focus-visible { border-radius: 50px; }
     .nav-toggle:focus-visible { border-radius: 4px; }
+
+    /* ── Scroll-reveal ── */
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-left, .hero-right, .news-box {
+        opacity: 0;
+        transform: translateY(28px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      .hero-right { transition-delay: 0.15s; }
+      .hero-left.revealed, .hero-right.revealed, .news-box.revealed {
+        opacity: 1;
+        transform: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -478,6 +493,16 @@
         list.appendChild(li);
       });
     })();
+  </script>
+  <script>
+    /* ── Scroll-reveal animations ── */
+    const revealEls = document.querySelectorAll('.news-box, .hero-right, .hero-left');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('revealed'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
