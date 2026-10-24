@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Behaviour in Shared Virtual Spaces | Silvia Rossi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .research-intro { max-width: 780px; margin-bottom: 36px; font-size: 15px; line-height: 1.8; color: #2c3e50; }
+    .pub-year-section { margin-bottom: 28px; }
+    .pub-year-heading { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; color: #1a2b3c; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #F0B400; }
+    .pub-list { list-style: disc; padding-left: 22px; }
+    .pub-item { font-size: 14px; color: #444; line-height: 1.85; margin-bottom: 14px; max-width: 860px; }
+    .pub-item a { color: #1a5276; text-decoration: underline; }
+    .pub-item a:hover { color: #0e3a5e; }
+    .back-link { display: inline-block; margin-bottom: 28px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700; color: #1a2b3c; border: 1.5px solid #1a2b3c; border-radius: 50px; padding: 5px 16px; transition: background 0.2s, color 0.2s; }
+    .back-link:hover { background: #1a2b3c; color: #F0B400; text-decoration: none; }
+    .badge-award { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #f0a500; border: 1px solid #f0a500; border-radius: 4px; padding: 1px 6px; margin-left: 6px; vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/icons/VR_pupina_website_yellow.png" alt="Silvia Rossi home" class="nav-logo">
+      <div><span class="nav-brand-name">Silvia Rossi</span><span class="nav-brand-degree"> PhD</span></div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-wrap">
+      <a href="research.html" class="back-link">← Research</a>
+      <h1 class="page-title">Social Behaviour in Shared Virtual Spaces</h1>
+
+      <div class="research-intro">
+        <!-- TODO: Silvia to expand -->
+        <p>When people share a virtual space, they still have to settle where to look, how close to stand and who speaks next. I study how shared attention, interpersonal distance, turn-taking and decisions emerge between people in social XR, alone or together.</p>
+      </div>
+
+      <section class="pub-year-section">
+        <h2 class="pub-year-heading">Selected Publications</h2>
+        <ul class="pub-list">
+          <li class="pub-item">S. Rossi, I. Viola, J. Jansen, S. Subramanyam, L. Toni, and P. Cesar. "Influence of Narrative Elements on User Behaviour in Photorealistic Social VR." <em>MMVE '21</em>, ACM, 2021. DOI: <a href="https://doi.org/10.1145/3458307.3463371" target="_blank" rel="noopener">10.1145/3458307.3463371</a></li>
+          <li class="pub-item">S. van Damme, J. Jansen, S. Rossi, and P. Cesar. "From Individual QoE to Shared Mental Models: A Novel Evaluation Paradigm for Collaborative XR." <em>QoMEX 2025</em>. <span class="badge-award">Best Paper Award</span></li>
+          <li class="pub-item">J. Williamson, S. Rossi, R. Johnstone, I. Viola, J. Williamson, T. Röggla, D. A. Shamma, and P. Cesar. "Social Density and its Impact on Behaviour in Virtual Environments." <em>IXR '25</em>, ACM, 2025. DOI: <a href="https://doi.org/10.1145/3746269.3760421" target="_blank" rel="noopener">10.1145/3746269.3760421</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-col-dark"><address>Centrum Wiskunde &amp; Informatica<br>Science Park 123, 1098XG<br>Amsterdam, The Netherlands<br><a href="mailto:s.rossi@cwi.nl">s.rossi@cwi.nl</a></address></div>
+    <div class="footer-col-dark"></div>
+    <div class="footer-col-light"><p class="footer-copy">© 2026 Silvia Rossi</p></div>
+  </footer>
+  <script>document.getElementById('navToggle').addEventListener('click',function(){this.classList.toggle('open');document.getElementById('navLinks').classList.toggle('open');});</script>
+</body>
+</html>
