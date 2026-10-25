@@ -214,11 +214,11 @@ const NEWS_ITEMS = [
     indexContent: `🌟 Elected <a href="https://records.sigmm.org/" target="_blank" rel="noopener"><strong>ACM SIGMM Director of Conferences</strong></a>`,
     cardDate: "1 June 2025",
     cardTitle: "Elected ACM SIGMM Director of Conferences",
-    cardText: "Silvia Rossi was elected as ACM SIGMM Director of Conferences.",
+    cardText: "Silvia Rossi was elected as ACM SIGMM Director of Conferences. I had held the role since November 2024, first as a replacement for the previous director.",
     cardImg: "assets/img/news/2025-06-01-sigmm-director.png",
     banner: "assets/img/news/2025-06-01-sigmm-director.png",
     fullText: `<p>Silvia Rossi was elected as <strong>Director of Conferences</strong> for ACM SIGMM, the Special Interest Group on Multimedia within the Association for Computing Machinery.</p>
-<p>In this role, Silvia oversees the organisation and coordination of the flagship ACM SIGMM conferences, including ACM Multimedia (MM) and ACM MMSys, supporting the global multimedia research community. The position reflects her active involvement in the research community and her commitment to fostering high-quality scientific exchange in multimedia systems and interactive media.</p>`,
+<p>In this role, Silvia oversees the organisation and coordination of the flagship ACM SIGMM conferences, including ACM Multimedia (MM) and ACM MMSys, supporting the global multimedia research community. The position reflects her active involvement in the research community and her commitment to fostering high-quality scientific exchange in multimedia systems and interactive media. I had held the role since November 2024, first as a replacement for the previous director.</p>`,
     url: "https://records.sigmm.org/",
   },
   {
