@@ -116,7 +116,7 @@ const NEWS_ITEMS = [
     banner: "assets/img/news/2026-05-09-spring-school.JPG",
     fullText: `<p>The 4th edition of the Spring School on Social XR took place April 20–23, 2026 at CWI Amsterdam, this year designated as an <strong>ACM Europe Seasonal School</strong>. Over 30 students from technology, social sciences, and humanities participated in this multidisciplinary event.</p>
 <p>The programme featured 11 lectures and 3 hands-on workshops led by 12 instructors, covering topics including trust and safety in virtual environments, ethical XR design, affective computing, AI-driven virtual humans, haptics, volumetric video, mobility in XR, and educational applications.</p>
-<p>The school was organised by Silvia Rossi, Irene Viola, Thomas Röggla, and Pablo Cesar (CWI), together with Omar Niamut (TNO). As the organisers put it: <em>''The future of immersive communication is not only technical but it is deeply human. Understanding how people trust, feel, move, and interact in virtual environments is as critical as the systems that make those environments possible."</em></p>`,
+<p>I organised the school together with Irene Viola, Thomas Röggla and Pablo Cesar (CWI) and Omar Niamut (TNO). As we put it: <em>''The future of immersive communication is not only technical but it is deeply human. Understanding how people trust, feel, move, and interact in virtual environments is as critical as the systems that make those environments possible."</em></p>`,
     url: "https://www.dis.cwi.nl/news/2026-05-09-4th-edition-of-spring-school-on-social-xr-acm-seasonal-school/",
   },
   {
@@ -139,11 +139,11 @@ const NEWS_ITEMS = [
     indexContent: `🎤 Keynote at the <a href="https://sites.google.com/view/sigmm-eu-chapter/events/chapter-kick-off-meeting" target="_blank" rel="noopener"><strong>ACM SIGMM Europe Chapter Symposium</strong></a>`,
     cardDate: "10 November 2025",
     cardTitle: "Keynote at the ACM SIGMM Europe Chapter Symposium",
-    cardText: `Title: <em>From Individual Immersion to Shared Experiences in Social XR.</em> Silvia outlined her research journey from modelling individual user behaviour in immersive spaces to designing and evaluating social XR experiences.`,
+    cardText: `Title: <em>From Individual Immersion to Shared Experiences in Social XR.</em> I outlined my research journey from modelling individual user behaviour in immersive spaces to designing and evaluating social XR experiences.`,
     cardImg: "assets/img/news/keynote-sigmm-europe-2025.png",
     banner: "assets/img/news/keynote-sigmm-europe-2025.png",
-    fullText: `<p>Silvia delivered the keynote talk <em>From Individual Immersion to Shared Experiences in Social XR</em> at the kick-off meeting of the ACM SIGMM Europe Chapter Symposium.</p>
-<p>The talk traced her research journey: starting from understanding individual user behaviour in immersive media systems — including gaze, motion, and quality of experience — through to the design and evaluation of multi-user social XR environments. Silvia discussed the challenges of scaling immersive experiences from single-user studies to shared, collaborative social spaces, and presented findings from several recent projects conducted in the DIS group at CWI Amsterdam.</p>
+    fullText: `<p>I delivered the keynote talk <em>From Individual Immersion to Shared Experiences in Social XR</em> at the kick-off meeting of the ACM SIGMM Europe Chapter Symposium.</p>
+<p>The talk traced my research journey: starting from understanding individual user behaviour in immersive media systems — including gaze, motion, and quality of experience — through to the design and evaluation of multi-user social XR environments. I discussed the challenges of scaling immersive experiences from single-user studies to shared, collaborative social spaces, and presented findings from several recent projects conducted in the DIS group at CWI Amsterdam.</p>
 <p>The ACM SIGMM Europe Chapter Symposium brought together researchers from across Europe working in multimedia systems, human-computer interaction, and immersive media.</p>`,
     url: "https://sites.google.com/view/sigmm-eu-chapter/events/chapter-kick-off-meeting",
   },
@@ -164,15 +164,15 @@ const NEWS_ITEMS = [
     id: "surf-tech-trends-2025",
     category: "Media",
     indexDate: "09 Oct 2025",
-    indexContent: `📑 Silvia participated in the <a href="https://www.dis.cwi.nl/news/2025-10-09-surf-tech-trends-how-cwi-contributes-to-the-use-of-xr-for-education-and-research/" target="_blank" rel="noopener"><strong>SURF Tech Report</strong></a>`,
+    indexContent: `📑 I participated in the <a href="https://www.dis.cwi.nl/news/2025-10-09-surf-tech-trends-how-cwi-contributes-to-the-use-of-xr-for-education-and-research/" target="_blank" rel="noopener"><strong>SURF Tech Report</strong></a>`,
     cardDate: "8 October 2025",
     cardTitle: "SURF Tech Trends: how CWI contributes to the use of XR for education and research",
     cardText: "The SURF Tech Trends report is a bi-annual report providing insight into the most important digital trends. Immersive technology – or eXtended Reality – was one of the topics covered.",
     cardImg: "assets/img/news/2025-10-09-surf-tech-trends.jpg",
     banner: "assets/img/news/2025-10-09-surf-tech-trends.jpg",
-    fullText: `<p>Silvia Rossi contributed to the SURF Tech Trends report, a bi-annual publication by SURF — the collaborative organisation for IT in Dutch education and research — that identifies and analyses the most significant digital trends shaping higher education and academic research.</p>
+    fullText: `<p>I contributed to the SURF Tech Trends report, a bi-annual publication by SURF — the collaborative organisation for IT in Dutch education and research — that identifies and analyses the most significant digital trends shaping higher education and academic research.</p>
 <p>Immersive technology, or eXtended Reality (XR), was one of the focal topics of the edition. The report explores how institutions are beginning to adopt VR and AR for teaching, collaboration, and research infrastructure, and how CWI's work in immersive multimedia systems contributes to that broader landscape.</p>
-<p>Silvia's research on user behaviour in social XR and scalable immersive systems was highlighted as an example of how fundamental research can underpin practical applications in education and beyond.</p>`,
+<p>My research on user behaviour in social XR and scalable immersive systems was highlighted as an example of how fundamental research can underpin practical applications in education and beyond.</p>`,
     url: "https://www.dis.cwi.nl/news/2025-10-09-surf-tech-trends-how-cwi-contributes-to-the-use-of-xr-for-education-and-research/",
   },
   {
@@ -183,12 +183,28 @@ const NEWS_ITEMS = [
     indexContent: `🗂️ <a href="https://2025.acmmmsys.org/" target="_blank" rel="noopener"><strong>DIS Researcher co-organises ACM MMSys 2025 in South Africa</strong></a>`,
     cardDate: "8 October 2025",
     cardTitle: "DIS Researcher co-organises ACM MMSys 2025 in South Africa",
-    cardText: "The international ACM conference Multimedia Systems (MMSys) 2025, a premier conference on multimedia systems, was successfully co-organised by Silvia Rossi, researcher of the DIS group.",
+    cardText: "I co-organised the international ACM Multimedia Systems conference (MMSys) 2025, a premier conference on multimedia systems.",
     cardImg: "assets/img/news/2025-10-08-mmsys-2025.jpg",
     banner: "assets/img/news/2025-10-08-mmsys-2025.jpg",
-    fullText: `<p>Silvia Rossi served as co-organiser of ACM MMSys 2025, the 16th ACM International Conference on Multimedia Systems, held in Stellenbosch, South Africa. MMSys is a premier venue for research on multimedia systems, covering streaming, immersive media, quality of experience, and networked media applications.</p>
-<p>The conference brought together researchers and practitioners from around the world to present and discuss advances in multimedia systems design and evaluation. Silvia contributed to the organisation of the programme, including paper reviewing coordination.</p>`,
+    fullText: `<p>I served as co-organiser of ACM MMSys 2025, the 16th ACM International Conference on Multimedia Systems, held in Stellenbosch, South Africa. MMSys is a premier venue for research on multimedia systems, covering streaming, immersive media, quality of experience, and networked media applications.</p>
+<p>The conference brought together researchers and practitioners from around the world to present and discuss advances in multimedia systems design and evaluation. I contributed to the organisation of the programme, including paper reviewing coordination.</p>`,
     url: "https://2025.acmmmsys.org",
+  },
+  {
+    isoDate: "2025-10-08",
+    id: "mmve-paper-2025",
+    category: "Publication",
+    indexDate: "08 Oct 2025",
+    indexContent: `🗣️ <a href="https://dl.acm.org/doi/10.1145/3712677.3720460" target="_blank" rel="noopener"><strong>Paper presented at MMVE 2025</strong></a>`,
+    cardDate: "8 October 2025",
+    cardTitle: "New paper: Exploring Entropy-Based Solutions for Trajectory Prediction in VR",
+    cardText: "Varun Pradhan, Silvia Rossi, and Pablo Cesar. Published in the Proceedings of MMVE '25, co-located with ACM MMSys 2025. DOI: 10.1145/3712677.3720460",
+    cardImg: "assets/img/news/2025-03-31-mmve-2025.jpg",
+    banner: "assets/img/news/2025-03-31-mmve-2025.jpg",
+    fullText: `<p>Varun Pradhan, Silvia Rossi, and Pablo Cesar. <em>Exploring Entropy-Based Solutions for Trajectory Prediction in VR.</em> In Proceedings of the Workshop on Immersive Mixed and Virtual Environment Systems (MMVE '25), co-located with ACM MMSys 2025, Stellenbosch, South Africa.</p>
+<p><strong>DOI:</strong> <a href="https://dl.acm.org/doi/10.1145/3712677.3720460" target="_blank" rel="noopener">10.1145/3712677.3720460</a></p>
+<p>This paper investigates entropy-based methods for predicting user trajectories in virtual reality environments — a key component for optimising content delivery and reducing bandwidth in immersive streaming systems. By modelling the uncertainty in user movement, the proposed approach improves prediction accuracy compared to deterministic baselines, with implications for adaptive streaming and prefetching strategies in 6-DoF VR systems.</p>`,
+    url: "https://dl.acm.org/doi/10.1145/3712677.3720460",
   },
   {
     isoDate: "2025-10-06",
@@ -203,7 +219,7 @@ const NEWS_ITEMS = [
     banner: "assets/img/news/2025-10-10-qomex-2025.png",
     fullText: `<p>Research from the Distributed and Interactive Systems (DIS) group at CWI won the <strong>Best Paper Award</strong> at QoMEX 2025, the International Conference on Quality of Multimedia Experience.</p>
 <p>The awarded paper introduces a new method for measuring group dynamics in Extended Reality (XR) environments — addressing a key challenge in social XR research where conventional individual-level metrics fail to capture the collective experience of co-present users.</p>
-<p>The work contributes to Silvia's broader research agenda on understanding and evaluating social behaviour in immersive multi-user systems, with implications for the design of scalable and engaging social XR platforms.</p>`,
+<p>The work contributes to my broader research agenda on understanding and evaluating social behaviour in immersive multi-user systems, with implications for the design of scalable and engaging social XR platforms.</p>`,
     url: "https://www.dis.cwi.nl/news/2025-10-10-new-way-to-measure-group-dynamics-in-extended-reality-xr-dis-wins-the-best-paper-award/",
   },
   {
@@ -214,28 +230,12 @@ const NEWS_ITEMS = [
     indexContent: `🌟 Elected <a href="https://records.sigmm.org/" target="_blank" rel="noopener"><strong>ACM SIGMM Director of Conferences</strong></a>`,
     cardDate: "1 June 2025",
     cardTitle: "Elected ACM SIGMM Director of Conferences",
-    cardText: "Silvia Rossi was elected as ACM SIGMM Director of Conferences. I had held the role since November 2024, first as a replacement for the previous director.",
+    cardText: "I was elected as ACM SIGMM Director of Conferences. I had held the role since November 2024, first as a replacement for the previous director.",
     cardImg: "assets/img/news/2025-06-01-sigmm-director.png",
     banner: "assets/img/news/2025-06-01-sigmm-director.png",
-    fullText: `<p>Silvia Rossi was elected as <strong>Director of Conferences</strong> for ACM SIGMM, the Special Interest Group on Multimedia within the Association for Computing Machinery.</p>
-<p>In this role, Silvia oversees the organisation and coordination of the flagship ACM SIGMM conferences, including ACM Multimedia (MM) and ACM MMSys, supporting the global multimedia research community. The position reflects her active involvement in the research community and her commitment to fostering high-quality scientific exchange in multimedia systems and interactive media. I had held the role since November 2024, first as a replacement for the previous director.</p>`,
+    fullText: `<p>I was elected as <strong>Director of Conferences</strong> for ACM SIGMM, the Special Interest Group on Multimedia within the Association for Computing Machinery.</p>
+<p>In this role, I oversee the organisation and coordination of the flagship ACM SIGMM conferences, including ACM Multimedia (MM) and ACM MMSys, supporting the global multimedia research community. The position reflects my active involvement in the research community and my commitment to fostering high-quality scientific exchange in multimedia systems and interactive media. I had held the role since November 2024, first as a replacement for the previous director.</p>`,
     url: "https://records.sigmm.org/",
-  },
-  {
-    isoDate: "2025-03-31",
-    id: "mmve-paper-2025",
-    category: "Publication",
-    indexDate: "31 Mar 2025",
-    indexContent: `🗣️ <a href="https://dl.acm.org/doi/10.1145/3712677.3720460" target="_blank" rel="noopener"><strong>Paper presented at MMVE 2025</strong></a>`,
-    cardDate: "8 October 2025",
-    cardTitle: "New paper: Exploring Entropy-Based Solutions for Trajectory Prediction in VR",
-    cardText: "Varun Pradhan, Silvia Rossi, and Pablo Cesar. Published in the Proceedings of MMVE '25, co-located with ACM MMSys 2025. DOI: 10.1145/3712677.3720460",
-    cardImg: "assets/img/news/2025-03-31-mmve-2025.jpg",
-    banner: "assets/img/news/2025-03-31-mmve-2025.jpg",
-    fullText: `<p>Varun Pradhan, Silvia Rossi, and Pablo Cesar. <em>Exploring Entropy-Based Solutions for Trajectory Prediction in VR.</em> In Proceedings of the Workshop on Immersive Mixed and Virtual Environment Systems (MMVE '25), co-located with ACM MMSys 2025, Stellenbosch, South Africa.</p>
-<p><strong>DOI:</strong> <a href="https://dl.acm.org/doi/10.1145/3712677.3720460" target="_blank" rel="noopener">10.1145/3712677.3720460</a></p>
-<p>This paper investigates entropy-based methods for predicting user trajectories in virtual reality environments — a key component for optimising content delivery and reducing bandwidth in immersive streaming systems. By modelling the uncertainty in user movement, the proposed approach improves prediction accuracy compared to deterministic baselines, with implications for adaptive streaming and prefetching strategies in 6-DoF VR systems.</p>`,
-    url: "https://dl.acm.org/doi/10.1145/3712677.3720460",
   },
   {
     isoDate: "2025-02-03",
@@ -310,12 +310,12 @@ const NEWS_ITEMS = [
     indexContent: `🎙️ <a href="https://academicpositions.com/story/crafting-algorithms-to-optimise-3d-experience" target="_blank" rel="noopener"><strong>Understanding Users to Optimise 3D Experiences</strong></a>`,
     cardDate: "5 January 2024",
     cardTitle: "Understanding Users to Optimise 3D Experiences",
-    cardText: "Interview on Academic Positions on Silvia's research into virtual reality, user behaviour, and optimising immersive media systems for real-world scale.",
+    cardText: "Interview on Academic Positions about my research into virtual reality, user behaviour, and optimising immersive media systems for real-world scale.",
     cardImg: "assets/img/news/2024-01-05-interview-academic-positions.jpg",
     banner: "assets/img/news/2024-01-05-interview-academic-positions.jpg",
-    fullText: `<p>Academic Positions published an interview with Silvia Rossi on her research into virtual reality, user behaviour, and the challenge of optimising immersive media systems for real-world scale.</p>
-<p>In the interview, Silvia discusses how understanding the way individual users move, look, and interact in 3D virtual environments is key to designing efficient systems — from adaptive streaming pipelines that predict what content to pre-load, to social VR platforms that can support many simultaneous users without sacrificing quality of experience.</p>
-<p>She also reflects on the path from PhD research at University College London to her current role at CWI Amsterdam, and the importance of user studies as a foundation for systems research in immersive media.</p>`,
+    fullText: `<p>Academic Positions published an interview with me on my research into virtual reality, user behaviour, and the challenge of optimising immersive media systems for real-world scale.</p>
+<p>In the interview, I discuss how understanding the way individual users move, look, and interact in 3D virtual environments is key to designing efficient systems — from adaptive streaming pipelines that predict what content to pre-load, to social VR platforms that can support many simultaneous users without sacrificing quality of experience.</p>
+<p>I also reflect on the path from PhD research at University College London to my current role at CWI Amsterdam, and the importance of user studies as a foundation for systems research in immersive media.</p>`,
     url: "https://academicpositions.com/story/crafting-algorithms-to-optimise-3d-experience",
   },
   {
@@ -326,7 +326,7 @@ const NEWS_ITEMS = [
     indexContent: `🎙️ <a href="https://www.ucl.ac.uk/engineering/case-studies/2023/nov/meet-silvia-rossi-phd-alumni-researcher-vr" target="_blank" rel="noopener"><strong>Meet Silvia Rossi, UCL PhD Alumni, researcher in VR</strong></a>`,
     cardDate: "27 November 2023",
     cardTitle: "Interview with Silvia Rossi, UCL PhD Alumni, researcher in VR",
-    cardText: "Silvia chats to us about how her interest in multimedia developed, her experience doing a PhD at EEE and her current research on user behaviour in virtual reality (VR).",
+    cardText: "I talk about how my interest in multimedia developed, my experience doing a PhD at EEE and my current research on user behaviour in virtual reality (VR).",
     cardImg: "assets/img/news/2023-11-27-meet-silvia-rossi-ucl-phd-alumni-researcher-in-vr.jpg",
     banner: "assets/img/news/2023-11-27-meet-silvia-rossi-ucl-phd-alumni-researcher-in-vr.jpg",
     fullText: `<p> <bold>How did you get interested in virtual reality?</bold></p>
@@ -341,11 +341,11 @@ const NEWS_ITEMS = [
     indexContent: `🏆 <a href="https://www.ucl.ac.uk/electronic-electrical-engineering/news/2023/nov/ucl-alumni-receives-prestigious-sigmm-award" target="_blank" rel="noopener"><strong>UCL alumni receives prestigious SIGMM award</strong></a>`,
     cardDate: "27 November 2023",
     cardTitle: "UCL alumni receives prestigious SIGMM award",
-    cardText: "Silvia Rossi received the ACM SIGMM Award for Outstanding PhD Thesis, presented at ACM MM 2023 in Ottawa, Canada.",
+    cardText: "I received the ACM SIGMM Award for Outstanding PhD Thesis, presented at ACM MM 2023 in Ottawa, Canada.",
     cardImg: "assets/img/news/2023-11-27-ucl-alumni-receives-prestigious-sigmm-award.jpg",
     banner: "assets/img/news/2023-11-27-ucl-alumni-receives-prestigious-sigmm-award.jpg",
-    fullText: `<p>Silvia Rossi received the <strong>ACM SIGMM Award for Outstanding PhD Thesis</strong>, presented at the ACM International Conference on Multimedia (ACM MM 2023) in Ottawa, Canada.</p>
-          <p>The award is given annually by ACM SIGMM to recognise exceptional doctoral research in the field of multimedia. Silvia's PhD thesis, completed at University College London (UCL) under the supervision of Prof. Laura Toni, was recognised for its contributions to understanding user behaviour in immersive media systems and applying those insights to adaptive content delivery.</p>
+    fullText: `<p>I received the <strong>ACM SIGMM Award for Outstanding PhD Thesis</strong>, presented at the ACM International Conference on Multimedia (ACM MM 2023) in Ottawa, Canada.</p>
+          <p>The award is given annually by ACM SIGMM to recognise exceptional doctoral research in the field of multimedia. My PhD thesis, completed at University College London (UCL) under the supervision of Prof. Laura Toni, was recognised for its contributions to understanding user behaviour in immersive media systems and applying those insights to adaptive content delivery.</p>
           <p>The recognition was also covered by UCL's Department of Electronic and Electrical Engineering, highlighting the impact of the research on both the academic multimedia community and the broader field of immersive media systems.</p>`,
     url: "https://www.ucl.ac.uk/electronic-electrical-engineering/news/2023/nov/ucl-alumni-receives-prestigious-sigmm-award",
   },
@@ -357,7 +357,7 @@ const NEWS_ITEMS = [
     indexContent: `🎙️ <a href="https://www.dis.cwi.nl/news/2023-11-21-best-acm-sigmm-2023-phd-thesis-award-for-silvia-rossi/" target="_blank" rel="noopener"><strong>Best ACM SIGMM 2023 PhD Thesis Award for Silvia Rossi</strong></a>`,
     cardDate: "21 November 2023",
     cardTitle: "Best ACM SIGMM 2023 PhD Thesis Award for Silvia Rossi",
-    cardText: "Silvia Rossi received the ACM SIGMM Award for Outstanding PhD Thesis, presented at ACM MM 2023 in Ottawa, Canada.",
+    cardText: "I received the ACM SIGMM Award for Outstanding PhD Thesis, presented at ACM MM 2023 in Ottawa, Canada.",
     cardImg: "assets/img/news/2023-11-21-best-acm-sigmm-2023-phd-thesis-award_cover.jpg",
     banner: "assets/img/news/2023-11-21-best-acm-sigmm-2023-phd-thesis-award.png",
     fullText: `<p>During the ACM Multimedia Conference (ACM MM 2023), premier conference and a key world event to display scientific achievements and innovative industrial products in the multimedia field, Silvia Rossi, postdoctoral researcher in DIS group, won the 2023 SIGMM Award for Outstanding PhD Thesis in Multimedia Computing, Communications and Applications. This was announced by the organisation during the gala dinner on Wednesday, 1st November. Silvia received the award thanks to the outstanding research conducted during her PhD which has been recognised with the potential of very high impact in multimedia computing, communication and applications. Her PhD thesis also received the 2022 Lombardi Prize for the best UCL EEE doctoral thesis. Silvia was the first PhD student of the Learning And Signal Processing (LASP) group led by Dr Laura Toni.</p>`,
@@ -385,11 +385,11 @@ const NEWS_ITEMS = [
     indexContent: `🎙️ <a href="https://www.cwi.nl/en/stories/how-do-we-use-space-in-vr/" target="_blank" rel="noopener"><strong>How do we use space in VR?</strong></a>`,
     cardDate: "19 October 2023",
     cardTitle: "How do we use space in VR?",
-    cardText: "CWI interview on personal space and navigation in social VR, discussing Silvia's findings on user behaviour in immersive multi-user environments.",
+    cardText: "CWI interview on personal space and navigation in social VR, discussing my findings on user behaviour in immersive multi-user environments.",
     cardImg: "assets/img/news/2023-10-19-how-do-we-use-space-in-vr.jpg",
     banner: "assets/img/news/2023-10-19-how-do-we-use-space-in-vr.jpg",
-    fullText: `<p>CWI Amsterdam published an interview with Silvia Rossi exploring how people use and perceive space in virtual reality environments — particularly in social VR settings where multiple users share the same virtual space.</p>
-            <p>The interview discusses findings from Silvia's research on proxemics (personal space) and navigation behaviour in immersive multi-user environments. Key questions include: do people maintain the same social distances in VR as in physical spaces? How do users navigate around each other? And what does this mean for the design of social VR platforms?</p>`,
+    fullText: `<p>CWI Amsterdam published an interview with me exploring how people use and perceive space in virtual reality environments — particularly in social VR settings where multiple users share the same virtual space.</p>
+            <p>The interview discusses findings from my research on proxemics (personal space) and navigation behaviour in immersive multi-user environments. Key questions include: do people maintain the same social distances in VR as in physical spaces? How do users navigate around each other? And what does this mean for the design of social VR platforms?</p>`,
     url: "https://www.cwi.nl/en/stories/how-do-we-use-space-in-vr/",
   },
   {
@@ -400,7 +400,7 @@ const NEWS_ITEMS = [
     indexContent: `🎙️ <a href="https://www.dis.cwi.nl/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week/" target="_blank" rel="noopener"><strong>Silvia Rossi Invited to the Dutch Media Week</strong></a>`,
     cardDate: "17 October 2023",
     cardTitle: "Silvia Rossi Invited to the Dutch Media Week",
-    cardText: "During the Dutch Media Week, postdoctoral researcher Silvia Rossi was one of the speakers at the program Cross Media Café on Spatial computing. ",
+    cardText: "During the Dutch Media Week, I was one of the speakers at the program Cross Media Café on Spatial computing. ",
     cardImg: "assets/img/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week_cover.jpg",
     banner: "assets/img/news/2023-10-17-cwi-researcher-silvia-rossi-invited-to-the-dutch-media-week.jpg",
     fullText: `<p>During the Dutch Media Week, postdoctoral researcher Silvia Rossi was recently one of the invited speakers at the program Cross Media Cafè on October 3, 2023 during the Dutch Media week. The Cross Media Café is organised by Sound & Vision and Media Perspectives and aims at showcasing the latest developments in the field of media, technology and innovation for media professionals. She brought a scientific perspective talking about her work on understanding user behaviour in XR.</p>
@@ -412,7 +412,7 @@ const NEWS_ITEMS = [
     id: "spring-school-2023",
     category: "Service",
     indexDate: "25 May 2023",
-    indexContent: `🎙️ <a href="https://www.dis.cwi.nl/news/2023-05-25-dis-organises-sping-school-on-social-xr/" target="_blank" rel="noopener"><strong>Silvia co-organises the Spring School on Social XR</strong></a>`,
+    indexContent: `🎙️ <a href="https://www.dis.cwi.nl/news/2023-05-25-dis-organises-sping-school-on-social-xr/" target="_blank" rel="noopener"><strong>I co-organised the Spring School on Social XR</strong></a>`,
     cardDate: "25 May 2023",
     cardTitle: "Spring School on Social XR 2023",
     cardText: "As part of the research semester program  of CWI, the Distributed and Interactive Systems group (DIS) organized the Spring School on Social XR.",
