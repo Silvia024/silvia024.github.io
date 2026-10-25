@@ -157,6 +157,20 @@
       line-height: 1.1;
     }
 
+    .hero-tagline-wrap {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a2b3c;
+      line-height: 1.65;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .hero-kw-divider {
+      width: 80px;
+      height: 1.5px;
+      background: rgba(240,180,0,0.6);
+      margin: 6px 0 10px;
+    }
     .hero-tags {
       display: flex;
       flex-wrap: wrap;
@@ -164,24 +178,16 @@
       margin-bottom: 14px;
     }
     .hero-tag {
-      background: rgba(240,180,0,0.2);
-      border: 1px solid rgba(240,180,0,0.55);
-      color: #1a2b3c;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 3px 10px;
-      border-radius: 4px;
+      letter-spacing: 0.1em;
+      color: #6b8494;
     }
-    .hero-tagline-wrap {
-      font-size: 15px;
-      font-weight: 600;
-      color: #1a2b3c;
-      line-height: 1.65;
-      margin-bottom: 14px;
-      border-left: 3px solid #F0B400;
-      padding-left: 12px;
+    .hero-tag:not(:last-child)::after {
+      content: " ·";
+      color: #6b8494;
+      margin-left: 1px;
     }
 
     /* FIX: decorative divider is now hidden from assistive tech */
@@ -303,6 +309,7 @@
       .hero-right { width: 100%; padding-left: 0; text-align: center; }
       .hero-tags { justify-content: center; }
       .hero-tagline-wrap { display: inline-block; text-align: left; }
+      .hero-kw-divider { margin-left: auto; margin-right: auto; }
       .hero-divider { margin-left: auto; margin-right: auto; }
       .hero-name-bubble h1 { font-size: 34px; white-space: normal; }
       .news-section { padding: 12px 0 40px; }
@@ -417,12 +424,13 @@
         <div class="hero-name-bubble">
           <h1>Silvia Rossi, PhD</h1>
         </div>
+        <p class="hero-tagline-wrap">Senior Scientist at CWI (Amsterdam)<br><a href="https://records.sigmm.org/" target="_blank" rel="noopener" style="color:#1a2b3c;">ACM SIGMM</a> Director of Conferences</p>
+        <div class="hero-kw-divider"></div>
         <div class="hero-tags">
           <span class="hero-tag">Social XR</span>
-          <span class="hero-tag">Immersive Systems</span>
-          <span class="hero-tag">ACM SIGMM</span>
+          <span class="hero-tag">Immersive Media</span>
+          <span class="hero-tag">HCI</span>
         </div>
-        <p class="hero-tagline-wrap">Senior Scientist at CWI (Amsterdam)<br>Immersive Multimedia Systems &amp; XR<br><a href="https://records.sigmm.org/" target="_blank" rel="noopener" style="color:#1a2b3c;">ACM SIGMM</a> Director of Conferences</p>
         <!-- FIX: aria-hidden on decorative divider -->
         <div class="hero-divider" aria-hidden="true"></div>
         <div class="hero-bio">
