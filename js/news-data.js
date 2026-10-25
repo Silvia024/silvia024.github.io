@@ -230,8 +230,8 @@ const NEWS_ITEMS = [
     cardDate: "8 October 2025",
     cardTitle: "New paper: Exploring Entropy-Based Solutions for Trajectory Prediction in VR",
     cardText: "Varun Pradhan, Silvia Rossi, and Pablo Cesar. Published in the Proceedings of MMVE '25, co-located with ACM MMSys 2025. DOI: 10.1145/3712677.3720460",
-    cardImg: "https://static.wixstatic.com/media/6e11d6_1f4cd59bca834acfb8643d699b6a5012~mv2.jpg/v1/crop/x_0,y_31,w_922,h_925/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-10-08%20at%2015_edited_edite.jpg",
-    banner: "https://static.wixstatic.com/media/6e11d6_1f4cd59bca834acfb8643d699b6a5012~mv2.jpg/v1/crop/x_0,y_31,w_922,h_925/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-10-08%20at%2015_edited_edite.jpg",
+    cardImg: "assets/img/news/2025-03-31-mmve-2025.jpg",
+    banner: "assets/img/news/2025-03-31-mmve-2025.jpg",
     fullText: `<p>Varun Pradhan, Silvia Rossi, and Pablo Cesar. <em>Exploring Entropy-Based Solutions for Trajectory Prediction in VR.</em> In Proceedings of the Workshop on Immersive Mixed and Virtual Environment Systems (MMVE '25), co-located with ACM MMSys 2025, Stellenbosch, South Africa.</p>
 <p><strong>DOI:</strong> <a href="https://dl.acm.org/doi/10.1145/3712677.3720460" target="_blank" rel="noopener">10.1145/3712677.3720460</a></p>
 <p>This paper investigates entropy-based methods for predicting user trajectories in virtual reality environments — a key component for optimising content delivery and reducing bandwidth in immersive streaming systems. By modelling the uncertainty in user movement, the proposed approach improves prediction accuracy compared to deterministic baselines, with implications for adaptive streaming and prefetching strategies in 6-DoF VR systems.</p>`,
@@ -246,8 +246,8 @@ const NEWS_ITEMS = [
     cardDate: "3 February 2025",
     cardTitle: "New journal paper: Visual Saliency for Dynamic Point Clouds",
     cardText: `Xuemei Zhou, Irene Viola, Silvia Rossi, Pablo Cesar. "Comparison of Visual Saliency for Dynamic Point Clouds: Task-free vs. Task-dependent." IEEE TVCG 2025. Presented at IEEE VR 2025.`,
-    cardImg: "https://static.wixstatic.com/media/6e11d6_ee992a8ece524d01b390fb1c47bf7b00~mv2.jpg/v1/crop/x_1,y_0,w_897,h_900/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/dynamic_task_free_task_depedent_edited_j.jpg",
-    banner: "https://static.wixstatic.com/media/6e11d6_ee992a8ece524d01b390fb1c47bf7b00~mv2.jpg/v1/crop/x_1,y_0,w_897,h_900/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/dynamic_task_free_task_depedent_edited_j.jpg",
+    cardImg: "assets/img/news/2025-02-03-visual-saliency.jpg",
+    banner: "assets/img/news/2025-02-03-visual-saliency.jpg",
     fullText: `<p>Xuemei Zhou, Irene Viola, Silvia Rossi, Pablo Cesar. <em>Comparison of Visual Saliency for Dynamic Point Clouds: Task-free vs. Task-dependent.</em> IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025. Presented at IEEE VR 2025.</p>
 <p><strong>DOI:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10922128" target="_blank" rel="noopener">10.1109/TVCG.2025.10922128</a></p>
 <p>This journal paper presents a systematic comparison of visual saliency in dynamic point cloud content under two experimental conditions: task-free viewing, where participants freely explore the scene, and task-dependent viewing, where participants perform a specific visual task. The study reveals meaningful differences in gaze behaviour between conditions, with implications for the design of perceptually optimised compression and rendering pipelines for volumetric video. The work was presented at IEEE VR 2025.</p>`,
@@ -262,8 +262,8 @@ const NEWS_ITEMS = [
     cardDate: "31 October 2024",
     cardTitle: "New journal paper: Clustering Approach to Unveil User Similarities in 6-DoF XR",
     cardText: "Silvia Rossi, Irene Viola, Laura Toni, Pablo Cesar. ACM TOMM special issue MMSys 2023. DOI: 10.1145/3701734",
-    cardImg: "https://static.wixstatic.com/media/6e11d6_23c4ad070468470d9045a9b73d7c841f~mv2.jpg/v1/crop/x_133,y_116,w_452,h_453/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/TOMM2024_websitenews_edited.jpg",
-    banner: "https://static.wixstatic.com/media/6e11d6_23c4ad070468470d9045a9b73d7c841f~mv2.jpg/v1/crop/x_133,y_116,w_452,h_453/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/TOMM2024_websitenews_edited.jpg",
+    cardImg: "assets/img/news/2024-10-31-clustering-xr.jpg",
+    banner: "assets/img/news/2024-10-31-clustering-xr.jpg",
     fullText: `<p>Silvia Rossi, Irene Viola, Laura Toni, Pablo Cesar. <em>A Clustering Approach to Unveil User Similarities in 6-DoF XR.</em> ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), special issue of MMSys 2023.</p>
 <p><strong>DOI:</strong> <a href="https://dl.acm.org/doi/10.1145/3701734" target="_blank" rel="noopener">10.1145/3701734</a></p>
 <p>This paper applies unsupervised clustering to characterise and group users based on their navigation behaviour in six-degrees-of-freedom (6-DoF) extended reality environments. By identifying user archetypes — patterns of movement and attention that recur across individuals — the work provides a data-driven basis for personalising content delivery and adaptive streaming in immersive systems. The findings have direct applications for viewport prediction and quality-of-experience optimisation in volumetric media streaming.</p>`,
@@ -278,8 +278,8 @@ const NEWS_ITEMS = [
     cardDate: "31 October 2024",
     cardTitle: "New paper: Open-Sourcing VR2Gather at ACM MM 2024",
     cardText: `Jack Jansen, Thomas Röggla, Silvia Rossi, Irene Viola, Pablo Cesar. "Open-Sourcing VR2Gather: A Collaborative Social VR System." ACM MM 2024. DOI: 10.1145/3664647.3685515`,
-    cardImg: "https://static.wixstatic.com/media/6e11d6_bc64c112f74f46f2959d68c696cfa717~mv2.jpg/v1/crop/x_0,y_44,w_302,h_303/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3664647_3685515_key.jpg",
-    banner: "https://static.wixstatic.com/media/6e11d6_bc64c112f74f46f2959d68c696cfa717~mv2.jpg/v1/crop/x_0,y_44,w_302,h_303/fill/w_294,h_295,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3664647_3685515_key.jpg",
+    cardImg: "assets/img/news/2024-10-31-vr2gather.jpg",
+    banner: "assets/img/news/2024-10-31-vr2gather.jpg",
     fullText: `<p>Jack Jansen, Thomas Röggla, Silvia Rossi, Irene Viola, Pablo Cesar. <em>Open-Sourcing VR2Gather: A Collaborative Social VR System.</em> In Proceedings of ACM Multimedia 2024 (ACM MM '24).</p>
 <p><strong>DOI:</strong> <a href="https://dl.acm.org/doi/10.1145/3664647.3685515" target="_blank" rel="noopener">10.1145/3664647.3685515</a></p>
 <p>This paper presents the open-source release of VR2Gather, a collaborative social VR platform developed at CWI Amsterdam. VR2Gather supports real-time multi-user interaction in shared virtual environments using volumetric video representations of participants, enabling natural social presence without relying on avatars.</p>
