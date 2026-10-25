@@ -63,7 +63,7 @@
         var imgHtml = item.cardImg
           ? '<img src="' + item.cardImg + '" alt="" class="news-card-img" loading="lazy">'
           : '';
-        var detailUrl = 'news-item.html?id=' + item.id;
+        var detailUrl = 'news-item?id=' + item.id;
         var article = document.createElement('article');
         article.className = 'news-card';
         article.innerHTML =

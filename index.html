@@ -393,15 +393,17 @@
     }
 
     /* ── Selected Talks strip ── */
-    .talks-strip { background: #fff; padding: 36px 0 32px; }
+    .talks-strip { background: #dce8ef; padding: 36px 0 32px; }
     .talks-inner { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
     .talks-heading { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: #1a2b3c; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: #F0B400; margin-bottom: 20px; }
     .talks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 10px; }
-    .talk-card { background: #fff; border: 2px solid #c89600; border-radius: 8px; padding: 20px 20px 18px; box-shadow: 4px 4px 0 #c89600; display: flex; flex-direction: column; gap: 8px; }
+    .talk-card { background: #fff; border: 2px solid #c89600; border-radius: 8px; padding: 20px 20px 18px; box-shadow: 4px 4px 0 #c89600; display: flex; flex-direction: column; }
+    .talk-card-body { flex: 1; display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
     .talk-type-label { font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #f0a500; }
-    .talk-card-title { font-size: 14px; font-style: italic; color: #1a2b3c; line-height: 1.55; flex: 1; }
-    .talk-card-venue { font-size: 12px; color: #6b8494; line-height: 1.5; }
-    .talk-card-btn { display: inline-block; margin-top: 6px; font-size: 13px; font-weight: 600; color: #1a2b3c; text-decoration: underline; text-underline-offset: 3px; align-self: flex-start; }
+    .talk-card-title { font-size: 14px; font-style: italic; color: #1a2b3c; line-height: 1.55; }
+    .talk-card-footer { display: flex; flex-direction: column; gap: 6px; border-top: 1px solid rgba(200,150,0,0.25); padding-top: 10px; }
+    .talk-card-venue { font-size: 12px; color: #6b8494; line-height: 1.5; min-height: calc(12px * 1.5 * 2); }
+    .talk-card-btn { display: inline-block; font-size: 13px; font-weight: 600; color: #1a2b3c; text-decoration: underline; text-underline-offset: 3px; align-self: flex-start; }
     .talk-card-btn:hover { color: #c89600; }
     .talks-all-link { font-size: 13px; font-weight: 600; color: #6b8494; text-underline-offset: 3px; }
     .talks-all-link:hover { color: #1a2b3c; }
@@ -527,22 +529,34 @@
       <h2 class="talks-heading" id="talks-heading">Selected talks</h2>
       <div class="talks-grid">
         <div class="talk-card">
-          <span class="talk-type-label">Keynote</span>
-          <p class="talk-card-title"><em>From Individual Immersion to Shared Experiences in Social XR</em></p>
-          <p class="talk-card-venue">ACM SIGMM Europe Chapter Symposium, co-located with ACM MM 2025, Dublin</p>
-          <a href="https://sites.google.com/view/sigmm-eu-chapter/events/chapter-kick-off-meeting" target="_blank" rel="noopener" class="talk-card-btn">Event →</a>
+          <div class="talk-card-body">
+            <span class="talk-type-label">Keynote</span>
+            <p class="talk-card-title"><em>From Individual Immersion to Shared Experiences in Social XR</em></p>
+          </div>
+          <div class="talk-card-footer">
+            <p class="talk-card-venue">ACM SIGMM Europe Chapter Symposium · ACM MM 2025, Dublin</p>
+            <a href="https://sites.google.com/view/sigmm-eu-chapter/events/chapter-kick-off-meeting" target="_blank" rel="noopener" class="talk-card-btn">Event →</a>
+          </div>
         </div>
         <div class="talk-card">
-          <span class="talk-type-label">Invited talk</span>
-          <p class="talk-card-title"><em>Cross Media Café: Spatial Computing</em></p>
-          <p class="talk-card-venue">Cross Media Café, Hilversum, 2023</p>
-          <a href="https://www.youtube.com/watch?v=bcN0tolar78" target="_blank" rel="noopener" class="talk-card-btn">▶ Watch</a>
+          <div class="talk-card-body">
+            <span class="talk-type-label">Invited talk</span>
+            <p class="talk-card-title"><em>Cross Media Café: Spatial Computing</em></p>
+          </div>
+          <div class="talk-card-footer">
+            <p class="talk-card-venue">Cross Media Café · Hilversum, 2023</p>
+            <a href="https://www.youtube.com/watch?v=bcN0tolar78" target="_blank" rel="noopener" class="talk-card-btn">▶ Watch</a>
+          </div>
         </div>
         <div class="talk-card">
           <!-- TODO: replace with ACM MM 2026 panel after 13 Nov 2026 -->
-          <span class="talk-type-label">Panel</span>
-          <p class="talk-card-title"><em>Multimodal Large Foundation Models</em></p>
-          <p class="talk-card-venue">ACM Multimedia 2023, Ottawa</p>
+          <div class="talk-card-body">
+            <span class="talk-type-label">Panel</span>
+            <p class="talk-card-title"><em>Multimodal Large Foundation Models</em></p>
+          </div>
+          <div class="talk-card-footer">
+            <p class="talk-card-venue">Panelist · ACM Multimedia 2023, Ottawa</p>
+          </div>
         </div>
       </div>
       <p><a href="bio.html#talks" class="talks-all-link">All talks →</a></p>
@@ -608,7 +622,7 @@
         // rewrite the link to open the detail page (visual markup unchanged)
         var anchor = li.querySelector('a');
         if (anchor && item.id) {
-          anchor.href = 'news-item.html?id=' + item.id;
+          anchor.href = 'news-item?id=' + item.id;
           anchor.removeAttribute('target');
           anchor.removeAttribute('rel');
         }
